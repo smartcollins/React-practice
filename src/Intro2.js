@@ -16,14 +16,14 @@ function Intro2(){
 	}
 
 	return(
-			<div className="intro">
+			<div>
 				{
 					nextPhase ? 
 						<Intro3/> :
 					signUp ? 
 						<SignUp/> :
 					<div>
-						<img src="https://bestgasandelectricity.co.uk/wp-content/uploads/2021/12/undraw_The_world_is_mine_re_j5cr-1024x753.png.webp" alt="logo"/>
+						<img className="people2" src="https://bestgasandelectricity.co.uk/wp-content/uploads/2021/12/undraw_The_world_is_mine_re_j5cr-1024x753.png.webp" alt="logo"/>
 						<h2>Create your own fundraising and publish it to the world</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 						<div>

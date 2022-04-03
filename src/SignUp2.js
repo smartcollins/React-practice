@@ -4,6 +4,7 @@ import SignIn from "./SignIn"
 
 function SignUp2(){
 	const [signIn,setSignIn] = useState(false)
+	const [signUp,setSignUp] = useState(false)
 	const [form,setForm] = useState({
        email:"",
        password:"",
@@ -29,15 +30,18 @@ function SignUp2(){
     function onSignIn(){
     	setSignIn(true)
     }
-    // function onSignUp(){
-    // 	password === password2 ? console.log('you are ready')
-    // }
+
+    function onSignUp(){
+    	setSignUp(true)
+    }
 
 	return(
 			<div>
 				{
 					signIn ?
 						<SignIn/> :
+					signUp ?
+						<h1>wert</h1> :
 					<div className="SignUp2">
 						<img className="people2" src="https://5.imimg.com/data5/AA/IF/TH/SELLER-1594742/download-free-bulk-whatsapp-sending-software-1000x1000.png" alt="head"/>
 						<h2>We care</h2>
@@ -79,7 +83,7 @@ function SignUp2(){
 				                    />
 				                    <label htmlFor="okayToEmail">Keep me always logged in</label>
 				                </div>
-				                <button className="form--submit">Sign up</button>
+				                <button onClick={onSignUp} className="form--submit">Sign up</button>
 				            </form>
 				        </div>
 				        <p>Or continue with</p>

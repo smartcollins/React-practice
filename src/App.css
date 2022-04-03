@@ -69,7 +69,6 @@
   background-color: transparent;
   color: #35e01f;
   padding: 10px 50px;
-  /*border-radius: 10px;*/
   border: none;
 }
 
@@ -86,7 +85,6 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  /*transition: background-color 0.6s ease;*/
 }
 
 .on{
@@ -132,7 +130,7 @@
   background-color: #35e01f;
   border-radius: 30px;
   color: white;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 .no-acc{
@@ -219,4 +217,84 @@
     display: flex;
     justify-content: space-evenly;
     margin: 0 30vw;
+}
+
+.forget{
+    color: #35e01f; 
+    cursor: pointer;
+}
+
+.forgot-top{
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.forgot-top h2{
+  margin: 0;
+  color: black;
+  padding-left: 20px;
+}
+
+.method{
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #05f020;
+}
+.method:focus{
+  outline: 2px solid #05f020;
+  background-color: transparent;
+}
+
+.logo-back{
+  background-color: #F7F7F7;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.method-txt{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: flex-start;
+}
+
+.forgot-end{
+  margin-top: 10vh;
+}
+.nxt{
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: #35e01f;
+  width: 100%;
+}
+
+.resend .forgot-top{
+  margin-bottom: 20vh;
+}
+
+.code-slot button{
+  border: 1px solid #05f020;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+}
+
+.code-slot span{
+  color: #05f020;
+}
+
+.ready{
+  margin-top: 20vh;
+}
+
+.ready .nxt{
+  margin-top: 50px;
 }

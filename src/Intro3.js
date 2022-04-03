@@ -14,12 +14,12 @@ function Intro3(){
 	}
 
 	return(
-			<div className="intro">
+			<div>
 				{
 					nextPhase || signUp ? 
-					<SignUp/> :
+						<SignUp/> :
 					<div>
-						<img src="https://i0.wp.com/cloudwell.io/wp-content/uploads/2022/02/packaged-solutions.png?resize=300%2C264&ssl=1" alt="logo"/>
+						<img className="people2" src="https://i0.wp.com/cloudwell.io/wp-content/uploads/2022/02/packaged-solutions.png?resize=300%2C264&ssl=1" alt="logo"/>
 						<h2>Trusted, Transparent, and effective in sharing kindness</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 						<div>
