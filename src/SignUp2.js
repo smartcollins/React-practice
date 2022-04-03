@@ -29,6 +29,9 @@ function SignUp2(){
     function onSignIn(){
     	setSignIn(true)
     }
+    // function onSignUp(){
+    // 	password === password2 ? console.log('you are ready')
+    // }
 
 	return(
 			<div>
@@ -76,11 +79,7 @@ function SignUp2(){
 				                    />
 				                    <label htmlFor="okayToEmail">Keep me always logged in</label>
 				                </div>
-				                <button 
-				                    className="form--submit"
-				                >
-				                    Sign up
-				                </button>
+				                <button className="form--submit">Sign up</button>
 				            </form>
 				        </div>
 				        <p>Or continue with</p>
