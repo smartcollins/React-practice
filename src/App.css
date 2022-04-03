@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,8 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,188 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.people{
+  max-width: 30%;
+  height: 50vh;
+}
+
+.intro{
+  margin-top: 30px;
+  padding: 30px 20px;
+  font-family: Helvetica Neue;
+  height: 100vh;
+}
+
+.intro img{
+  max-width: 50vw;
+  max-height: 60vh;
+}
+
+.intro h2{
+  /*color: rgb(40, 250, 54);*/
+  margin-top: 30px;
+  color: #35e01f;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn button{
+  background-color: transparent;
+  color: #35e01f;
+  padding: 10px 50px;
+  /*border-radius: 10px;*/
+  border: none;
+}
+
+.btn button:hover{
+  background-color: #35e01f;
+  color: white;
+  border-radius: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /*transition: background-color 0.6s ease;*/
+}
+
+.on{
+  background-color:#35e01f;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.signup h2{
+  color: black;
+}
+
+.signup-btn p{
+  font-weight: bold;
+}
+
+.signup-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.signup-btn button{
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  /*padding: 5px 10px;*/
+  margin: 10px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text{
+  padding-left: 10px;
+}
+
+.signup-btn .sign-in{
+  background-color: #35e01f;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 0;
+}
+
+.no-acc{
+  color: #d9cece;
+}
+
+.no-acc span{
+  color:  #35e01f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.SignUp2{
+  height: 100vh;
+  text-align: center;
+}
+.SignUp2 h2{
+  color: #35e01f;
+  margin-top: -10px;
+}
+.people2{
+  height: 20vh;
+  margin-top: -50px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h2{
+  color: black;
+  margin-top: 10px;
+}
+
+.form {
+    margin-top: 20px;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);*/
+}
+
+.form--input {
+    text-indent: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form--submit {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #35e01f;
+    border: none;   
+    cursor: pointer; 
+}
+
+.form--input:focus{
+    outline: 2px solid #35e01f;
+}
+
+.form--marketing {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.form--marketing > input {
+    margin-right: 10px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30vw;
 }
