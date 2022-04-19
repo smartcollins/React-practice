@@ -16,7 +16,7 @@ function Reset(){
 					<Reset2/> :
 				<div className="resend">
 					<div className="forgot-top">
-						<ArrowLeft size={32} color="#2fe22c" weight="fill" />
+						<ArrowLeft size={32} color="#2fe22c" weight="duotone" />
 						<h2>Forgot password</h2>
 					</div>
 					<p>Code has been sent to +6262*****39</p>

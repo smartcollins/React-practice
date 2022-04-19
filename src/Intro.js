@@ -6,15 +6,7 @@ import SignUp from "./SignUp"
 
 
 function Intro(){
-// const ads = ["https://923971.smushcdn.com/2326753/wp-content/uploads/2022/02/wp-easycart-multilingual.png?lossy=1&strip=1&webp=1","https://bestgasandelectricity.co.uk/wp-content/uploads/2021/12/undraw_The_world_is_mine_re_j5cr-1024x753.png.webp","https://i0.wp.com/cloudwell.io/wp-content/uploads/2022/02/packaged-solutions.png?resize=300%2C264&ssl=1"]
-	// function onNext(){
-	// 	ads.map(item=>(
-	// 		<img src={item} alt="Ads"/>
-	// 	))
-	// 	console.log('it ran')
-
-	// }
-
+	
 	const [nextPhase,setNextPhase] = useState(false);
 	const [signUp,setSignUp] = useState(false);
 	function onNext(){

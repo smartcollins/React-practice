@@ -39,7 +39,7 @@ function Reset2(){
 						<Ready/> :
 					<div>
 						<div className="forgot-top">
-							<ArrowLeft size={32} color="#2fe22c" weight="fill" />
+							<ArrowLeft size={32} color="#2fe22c" weight="duotone" />
 							<h2>Forgot password</h2>
 						</div>
 						<img src="https://livex.co.za/svg/secure_server.svg" alt="logo"/>

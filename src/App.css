@@ -37,9 +37,10 @@
   }
 }
 
-.people{
+.loading{
   max-width: 30%;
   height: 50vh;
+  object-fit: contain;
 }
 
 .intro{
@@ -114,9 +115,7 @@
 .signup-btn button{
   background-color: transparent;
   border: 1px solid #e6e6e6;
-  /*padding: 5px 10px;*/
-  margin: 10px 0;
-  font-size: 20px;
+  margin: 5px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +133,7 @@
 }
 
 .no-acc{
-  color: #d9cece;
+  color: #7d7d7d;
 }
 
 .no-acc span{
@@ -297,4 +296,63 @@
 
 .ready .nxt{
   margin-top: 50px;
+}
+
+
+
+.select-country{
+  padding: 20px;
+}
+
+.country{
+  font-size: 20px;
+}
+
+
+.country.highlight {
+  outline: 1px solid #05f020;
+  background-color: transparent !important;
+}
+
+.country-list .country{
+  margin: 10px;
+  border: 1px solid #bcb3b3;
+  border-radius: 10px;
+}
+
+.home button{
+  margin-top: 10v;
+}
+
+.home .nxt{
+  margin-top: 40vh;
+}
+
+
+@media screen and (max-width: 768px){
+  .select-country{
+    width: 90vw !important;
+  }
+  .country-list{
+    margin-top: 10px !important;
+  }
+
+  .flag-dropdown {
+    background-color: transparent !important;
+  }
+
+  .flag{
+    margin-right: 20px !important;
+  }
+
+  .country.preferred:first-child {
+    margin-top: 20px !important;
+  }
+
+  .country-select .country-list{
+    max-height: 35vh !important;
+    position: relative !important;
+
+  }
+
 }

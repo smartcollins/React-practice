@@ -15,7 +15,7 @@ function Forgot(){
 						<Reset/> :
 					<div className="forgot">
 						<div className="forgot-top">
-							<ArrowLeft size={32} color="#2fe22c" weight="fill" />
+							<ArrowLeft size={32} color="#2fe22c" weight="duotone" />
 							<h2>Forgot password</h2>
 						</div>
 						<img src="https://www.eurofiscalis.com/wp-content/uploads/2022/03/undraw_my_password_re_ydq7.svg" alt="logo" />
@@ -25,7 +25,7 @@ function Forgot(){
 								<div className="logo-back">
 									<ChatText size={32} color="#2fe22c" weight="duotone" />
 								</div>
-								<div onClick={onMethod} className="method-txt">
+								<div className="method-txt">
 									<p>via SMS:</p>
 									<p>+6282*****39</p>
 								</div>
@@ -40,7 +40,7 @@ function Forgot(){
 								</div>
 							</button>
 							<div className="forgot-end">
-								<button className="nxt">Continue</button>
+								<button onClick={onMethod} className="nxt">Continue</button>
 							</div>
 						</div>
 					</div>

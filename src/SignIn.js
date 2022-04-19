@@ -2,9 +2,11 @@ import {useState} from "react";
 import { Horse, AppleLogo, GoogleLogo, FacebookLogo  } from "phosphor-react";
 import SignUp2 from "./SignUp2";
 import Forgot from "./Forgot";
+import Home from "./Home"
 
 function SignIn(){
 
+	const [signIn,setSignIn] = useState(false)
 	const [signUp,setSignUp] = useState(false)
 	const [forgot,setForgot] = useState(false)
 	const [form,setForm] = useState({
@@ -37,9 +39,15 @@ function SignIn(){
     	setForgot(true)
     }
 
+    function onSignIn(){
+    	setSignIn(true)
+    }
+
 	return(
 			<div>
-				{
+				{	
+					signIn ?
+						<Home/> :
 					signUp ?
 						<SignUp2/> :
 					forgot ?
@@ -76,7 +84,7 @@ function SignIn(){
 				                    />
 				                    <label htmlFor="okayToEmail">Keep me always logged in</label>
 				                </div>
-				                <button className="form--submit">Sign in</button>
+				                <button className="form--submit" onClick={onSignIn}>Sign in</button>
 				            </form>
 				        </div>
 				        <p onClick={onForgot} className="forget">forgot password ?</p>

@@ -28,15 +28,15 @@ function SignUp(){
 						<h2>Let's you in </h2>	
 						<div className="signup-btn">
 							<button>
-								<FacebookLogo size={32} color="#0d1be3" weight="fill" />
+								<FacebookLogo size={20} color="#0d1be3" weight="fill" />
 								<p className="logo-text">Facebook</p>
 							</button>
 							<button>
-								<GoogleLogo size={32} color="#ec0909" weight="fill" />
+								<GoogleLogo size={20} color="#ec0909" weight="fill" />
 								<p className="logo-text">Google</p>
 							</button>
 							<button>
-								<AppleLogo size={32} color="#3f2727" weight="fill" />
+								<AppleLogo size={20} color="#3f2727" weight="fill" />
 								<p className="logo-text">Apple</p>
 							</button>
 							<p>Or</p>
