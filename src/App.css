@@ -1,3 +1,7 @@
+/*import dp from "./image/dp";*/
+
+
+
 .App {
   text-align: center;
   height: 100vh;
@@ -327,6 +331,89 @@
 .home .nxt{
   margin-top: 40vh;
 }
+
+/*.profile */.user,.user-2{
+  background-color: #f1eeee;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 50%;
+  width: 10vw;
+  position: relative;
+  object-fit: contain;
+}
+
+.user-2{
+  background-image: url(./image/dp.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;
+  height: 10vw;
+  position: relative;
+  z-index: 2;
+}
+
+/*.user{
+  background-color: #f1eeee;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 50%;
+  width: 10vw;
+  position: relative;
+  object-fit: contain; 
+}
+
+.user-2{
+  position: relative;
+}
+
+.user-2 img{
+  border-radius: 50%;
+  /*height: 15vh;
+  width: 30vw;
+
+}*/
+
+.user-pen{
+  background-color: #35e01f;
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.user-detail{
+  margin: 20px 0;
+}
+
+.user-input{
+  border: 1px solid #35e01f;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+
+.user-input:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.user-input input{
+  border: none;
+  background-color: transparent;
+  text-indent: 5px;
+  outline: none;
+  font-family: Helvetica Neue;
+  width: 100%;
+}
+
+.profile .nxt{
+  width: 80%;
+}
+
 
 
 @media screen and (max-width: 768px){
