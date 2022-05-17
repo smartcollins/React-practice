@@ -1,7 +1,3 @@
-/*import dp from "./image/dp";*/
-
-
-
 .App {
   text-align: center;
   height: 100vh;
@@ -237,6 +233,8 @@
   margin: 0;
   color: black;
   padding-left: 20px;
+  /*font-family: Helvetica Neue;*/
+  font-family: sans-serif;
 }
 
 .method{
@@ -324,11 +322,11 @@
   border-radius: 10px;
 }
 
-.home button{
-  margin-top: 10v;
+.home-page button{
+  margin-top: 10vh;
 }
 
-.home .nxt{
+.home-page .nxt{
   margin-top: 40vh;
 }
 
@@ -342,6 +340,10 @@
   object-fit: contain;
 }
 
+.user-icon{
+  /*visibility: hidden;*/
+}
+
 .user-2{
   background-image: url(./image/dp.jpg);
   object-fit: contain;
@@ -350,29 +352,7 @@
   border-radius: 50%;
   height: 10vw;
   position: relative;
-  z-index: 2;
 }
-
-/*.user{
-  background-color: #f1eeee;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 50%;
-  width: 10vw;
-  position: relative;
-  object-fit: contain; 
-}
-
-.user-2{
-  position: relative;
-}
-
-.user-2 img{
-  border-radius: 50%;
-  /*height: 15vh;
-  width: 30vw;
-
-}*/
 
 .user-pen{
   background-color: #35e01f;
@@ -414,6 +394,168 @@
   width: 80%;
 }
 
+.interests{
+  display: grid;
+  grid-template: auto/auto auto auto;
+  grid-gap: 15px;
+}
+
+.interests button{
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.interest .nxt{
+  margin-top: 20px;
+}
+
+.create{
+  padding: 50px;
+  position: relative;
+}
+
+.create h2{
+  color: black;
+  font-family: sans-serif;
+}
+
+.create:not(:first-child) *{
+  padding: 5px;
+}
+
+.great{
+  background-color: white;
+  padding: 20px 10px;
+  width: 80%;
+  border-radius: 15px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.great .nxt{
+  width: 60%;
+}
+
+.great > div{
+  background-color: #35e01f;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+.success {
+  background-blend-mode: darken;
+  opacity: 0.3;
+  filter: grayscale(10%) blur(1px) brightness(100%);
+}
+
+.home{
+  background-color: red;
+}
+
+.home-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-top1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-top1 h1{
+  font-family: Helvetica Neue;
+  padding-left: 10px;
+}
+
+.home-top2 *{
+  margin: 0 2px;
+  /*background-color: #A6F7C2;*/
+  /*background-color: #D1FFE1;*/
+  background-color: #D8FDE1;
+  border: transparent;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.home-mid{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  justify-content: space-around;
+}
+
+.home-mid > button{
+  color: red;
+  padding: 5px 20px;
+  border: 2px solid #35e01f;
+  border-radius: 15px;
+  color: #35e01f;
+  background-color: white;
+}
+
+.wallet{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wallet button{
+  background-color: #D8FDE1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+}
+
+.wallet > div{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.wallet > div > p{
+  margin-top: 0;
+  color: grey;
+}
+
+.help{
+  margin-top: 20px;
+  background-image: url(./image/baby.jpg);
+  height: 30vh;
+  border-radius: 10px;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  filter: brightness(80%);
+}
+
+.help > p{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  font-family: Helvetica Neue;
+}
+
+.help > div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20vw;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+}
 
 
 @media screen and (max-width: 768px){

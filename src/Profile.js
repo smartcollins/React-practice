@@ -1,26 +1,36 @@
 import {useState} from "react";
 import {ArrowLeft,User,Envelope,MapPin,Phone,CaretDown,PencilSimple} from "phosphor-react";
 import profile from "./image/dp.jpg";
+import Interest from "./Interest";
 
 
 function Profile(){
 	const [edit,setEdit] = useState(false)
+	const [verify,setVerify] =useState(false)
 
 
 	function onEdit(){
 		setEdit(oldEdit=>!edit)
 	}
+	function onVerify(){
+		setVerify(true)
+	}
 
 	return(
 		<div>
 			{
+				verify ? 
+				<Interest/>:
 				<div className="profile">
 					<div className="forgot-top">
 						<ArrowLeft size={32} color="#2fe22c" weight="duotone"/>
 						<h2>Fill Your Profile</h2>
 					</div>
-					<div className={edit?"user":"user-2"}>
-						<User size={32} color="#7d7d7d" weight="duotone"/>
+					<div className={edit?"user-2":"user"}>
+						{edit?
+							<User style={{visibility: "hidden"}} className="user-icon" size={32} color="#7d7d7d" weight="duotone"/> :
+							<User className="user-icon" size={32} color="#7d7d7d" weight="duotone"/>
+						}
 						<div className="user-pen" onClick={onEdit}>
 							<PencilSimple size={16} color="#ffffff" />
 						</div>
@@ -47,7 +57,7 @@ function Profile(){
 							<MapPin size={20} color="#7d7d7d" />
 						</div>
 					</div>
-					<button className="nxt">Verify</button>
+					<button onClick={onVerify} className="nxt">Verify</button>
 				</div>
 			}
 		</div>

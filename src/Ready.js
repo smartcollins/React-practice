@@ -1,23 +1,23 @@
 import {useState} from "react";
-import Home from "./Home";
+import HomePage from "./HomePage";
 
 function Ready(){
-	const [home,setHome] = useState(false)
+	const [homePage,setHomePage] = useState(false)
 
-	function onHome(){
-		setHome(true)
+	function onHomePage(){
+		setHomePage(true)
 	}
 
 	return(
 			<div>
 				{
-					home ?
-						<Home/> :
+					homePage ?
+						<HomePage/> :
 					<div className="ready">
 						<img className="people2" src="https://5.imimg.com/data5/AA/IF/TH/SELLER-1594742/download-free-bulk-whatsapp-sending-software-1000x1000.png" alt="logo"/>
 						<h2>Congratulations!</h2>
 						<p>Your account is ready to use</p>
-						<button onClick={onHome} className="nxt">Go to Homepage</button>
+						<button onClick={onHomePage} className="nxt">Go to Homepage</button>
 					</div>
 				}
 			</div>

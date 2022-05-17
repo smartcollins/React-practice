@@ -1,8 +1,8 @@
 import {useState} from "react";
-import { Horse, AppleLogo, GoogleLogo, FacebookLogo  } from "phosphor-react";
+import {AppleLogo, GoogleLogo, FacebookLogo  } from "phosphor-react";
 import SignUp2 from "./SignUp2";
 import Forgot from "./Forgot";
-import Home from "./Home"
+import HomePage from "./HomePage"
 
 function SignIn(){
 
@@ -47,7 +47,7 @@ function SignIn(){
 			<div>
 				{	
 					signIn ?
-						<Home/> :
+						<HomePage/> :
 					signUp ?
 						<SignUp2/> :
 					forgot ?

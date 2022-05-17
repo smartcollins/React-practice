@@ -1,4 +1,4 @@
-import { Horse, AppleLogo, GoogleLogo, FacebookLogo  } from "phosphor-react";
+import {AppleLogo, GoogleLogo, FacebookLogo  } from "phosphor-react";
 import {useState} from "react";
 import SignUp2 from "./SignUp2";
 import SignIn from "./SignIn"
