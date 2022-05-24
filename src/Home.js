@@ -3,12 +3,29 @@ import Urgent from "./Urgent"
 import Coming from "./Coming"
 import Watch from "./Watch"
 import Prayer from "./Prayer"
+import Menu from "./Menu"
+import Notification from "./Notification"
+import Bookmark from "./Bookmark"
+import{useState} from "react"
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 
 function Home(){
+	const [notify,setNotify] = useState(false)
+	const [mark,setMark] = useState(false)
+
+	function onNotify(){
+		setNotify(true)
+	}
+
+	function onMark(){
+		setMark(true)
+	}
 	return(
 		<div>
-			{
+			{	notify ?
+				<Notification/> :
+				mark ?
+				<Bookmark/> :
 				<div>
 					<div className="home-top">
 						<div className="home-top1">
@@ -19,10 +36,10 @@ function Home(){
 							<button>
 								<MagnifyingGlass size={16} color="#35e01f" weight="bold" />
 							</button>
-							<button>
+							<button onClick={onNotify}>
 								<Bell size={16} color="#35e01f" weight="fill" />
 							</button>
-							<button>
+							<button onClick={onMark}>
 								<BookmarkSimple size={16} color="#35e01f" weight="fill" />
 							</button>
 						</div>
@@ -50,12 +67,14 @@ function Home(){
 							<Circle size={10} color="#ffffff" weight="fill" />
 						</div>
 					</div>
+
+					<Urgent/>
+					<Coming/>
+					<Watch/>
+					<Prayer/>
+					<Menu/>
 				</div>
 			}
-			<Urgent/>
-			<Coming/>
-			<Watch/>
-			<Prayer/>
 		</div>
 		)
 }

@@ -223,13 +223,13 @@
     cursor: pointer;
 }
 
-.forgot-top{
+.back{
   display: flex;
   align-items: center;
   margin-top: -20px;
   margin-bottom: 20px;
 }
-.forgot-top h2{
+.back h2{
   margin: 0;
   color: black;
   padding-left: 20px;
@@ -276,7 +276,7 @@
   width: 100%;
 }
 
-.resend .forgot-top{
+.resend .back{
   margin-bottom: 20vh;
 }
 
@@ -556,6 +556,358 @@
   bottom: 5%;
   left: 30%;
 }
+
+.urgent-top, .coming-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.urgent-top h5, .coming-top h5, .watch-top h5{
+  color: #35e01f;
+}
+
+.urgent-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.urgent-btn button:first-child{
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  width: 20%;
+  padding: 2px;
+  background-color: #35e01f;
+}
+
+.urgent-btn button:not(:first-child){
+  padding: 2px 9px;
+  background-color: white;
+  color: #35e01f;
+  border-radius: 15px;
+  border: 1px solid #35e01f;
+}
+
+.urgent-card{
+  margin-top: 20px;
+  box-shadow: 5px 5px 20px #aeeabd;
+  border-radius: 10px;
+}
+
+.urgent-img{
+  background-image: url(./image/orphan.jpg);
+}
+
+.bookmark-img{
+  background-image: url(./image/patient.jpg);
+}
+
+.bookmark-img2{
+  background-image: url(./image/student.jpg);
+}
+
+
+.urgent-img, .bookmark-img, .bookmark-img2{
+  background-position: 50% 50%;
+  object-fit: contain;
+  position: relative;
+  background-size: cover;
+  height: 30vh;
+  border-radius: 10px 10px 0 0;
+}
+
+.urgent-mark, .coming-mark, .bookmark-mark{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color: #35e01f;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.urgent-note span, .coming-note span, .bookmark span{
+  margin-left: -40px;
+  color: #35e01f;
+
+}
+
+.urgent-bar, .coming-bar, .bookmark-bar{
+  margin: 0 auto;
+  width: 85%;
+  border-radius: 5px;
+  height: 5px;
+  background: linear-gradient(90deg, #35e01f,#d6ffed);
+}
+
+.urgent-end, .coming-end, .bookmark-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.urgent-end span, .coming-end span, .bookmark-end span{
+  color: #35e01f;
+}
+
+.coming-card, .prayer-card{
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.coming-img{
+  height: 50vh;
+  background-image: url(./image/quake.jpg);
+  background-position: 50% 50%;
+  object-fit: contain;
+  position: relative;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.watch-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.watch-top h3{
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.watch-video{
+  display: grid;
+  grid-template: auto/auto auto;
+  grid-gap: 10px;
+}
+
+.watch-play{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.watch-txt{
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.watch1, .watch2{
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+  object-fit: contain;
+  height: 30vh;
+  border-radius: 20px;
+}
+
+.watch1{
+  background-image: url(./image/baby.jpg);
+}
+
+.watch2{
+  background-image: url(./image/baby2.jpg);
+}
+
+.prayer-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid red;
+}
+
+.prayer-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.prayer-img{
+  height: 10vh;
+  width: 15vw;
+  background-image: url(./image/dp.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.prayer-profile{
+  margin-bottom: 10px;
+   
+}
+
+.prayer-profile h6{
+  margin-bottom: 5px;
+}
+
+.prayer-profile span{
+  color: grey;
+  margin-right: 20px;
+}
+
+
+.prayer-comment{
+  text-align: left;
+  margin: 0 10px;
+}
+
+.prayer-like{
+  display: flex;
+}
+
+.prayer-like div{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.prayer-like p{
+  margin-left: 5px;
+}
+
+.menu{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu *{
+  background-color: #eff1ef;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu *:first-child {
+  background-color: #0da542;
+}
+
+.notification, .bookmark{
+  margin-top: -10vh;
+  height: 95vh;
+  position: relative;
+}
+
+.notification-top, .bookmark-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.notification-top .back, .bookmark-top .back{
+  margin: 0;
+}
+
+.notification-top h1, .bookmark-top h1{
+  margin-left: 10px;
+}
+
+.notify-null-main, .bookmark-null-main{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+}
+
+.notify-null-main p, .bookmark-null-main p{
+  color: #35e01f;
+}
+
+.bell, .book{
+  background-color: #35e01f;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+.notify,.book{
+  text-align: left;
+}
+
+.notify-bar{
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.notify-bar h5{
+  margin-bottom: 10px;
+}
+
+.notify-bar p{
+  margin-top: 0px;
+  color: grey;
+}
+
+.notify-logo{
+  background-color: #35e01f;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.cancel{
+  background-color: #f02828;
+}
+.new{
+  background-color: #ffd500;
+}
+
+.dot3{
+  background-color: #D8FDE1;
+  border: transparent;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.bookmark-btn button{
+  background-color: white;
+  color: #35e01f;
+  width: 20%;
+  margin: 0 5px;
+  border-radius: 10px;
+  border: 1px solid #35e01f;
+}
+
+.bookmark-btn button:first-child{
+  color: white;
+  background-color: #35e01f;
+  border: 1px solid transparent;
+}
+
+.bookmark-card{
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 768px){

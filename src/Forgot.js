@@ -14,7 +14,7 @@ function Forgot(){
 					method ? 
 						<Reset/> :
 					<div className="forgot">
-						<div className="forgot-top">
+						<div className="back">
 							<ArrowLeft size={32} color="#2fe22c" weight="duotone" />
 							<h2>Forgot password</h2>
 						</div>

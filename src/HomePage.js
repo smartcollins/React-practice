@@ -17,7 +17,7 @@ function HomePage(){
 					profile ?
 					<Profile/> :
 					<div className="home-page">
-						<div className="forgot-top">
+						<div className="back">
 							<ArrowLeft size={32} color="#2fe22c" weight="duotone"/>
 							<h2>Select your country</h2>
 						</div>

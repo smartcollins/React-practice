@@ -36,7 +36,7 @@ function Pin(){
 						</div>
 					</div> :
 					<div>
-						<div className="forgot-top">
+						<div className="back">
 							<ArrowLeft size={32} color="#2fe22c" weight="duotone"/>
 							<h2>Create Your Pin</h2>
 						</div>
