@@ -18,8 +18,7 @@ function Bookmark(){
 	}
 
 	const style = {
-		backgroundColor : "rgba(0,0,0,0.5)",
-		
+		backgroundColor : bookmark && "rgba(0,0,0,0.5)"
 	}
 
 	return(
