@@ -633,6 +633,13 @@
 
 }
 
+.bookmark-note h3{
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .urgent-bar, .coming-bar, .bookmark-bar{
   margin: 0 auto;
   width: 85%;
@@ -725,7 +732,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid grey;
 }
 
 .prayer-detail{
@@ -780,16 +787,20 @@
 }
 
 .menu{
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -10%);
 }
 
 .menu *{
   background-color: #eff1ef;
   padding: 10px;
   border-radius: 10px;
+  margin: 5px;
 }
 
 .menu *:first-child {
@@ -798,7 +809,7 @@
 
 .notification, .bookmark{
   margin-top: -10vh;
-  height: 95vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -900,6 +911,15 @@
   margin-top: 20px;
   border-radius: 10px;
 }
+
+/*.bookmark-card:not(:first-child){
+  background-color: blue;
+}*/
+
+.remove{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 
 
