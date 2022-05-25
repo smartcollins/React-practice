@@ -1,4 +1,5 @@
 import React from "react";
+import{useState} from "react"
 import Urgent from "./Urgent"
 import Coming from "./Coming"
 import Watch from "./Watch"
@@ -6,12 +7,13 @@ import Prayer from "./Prayer"
 import Menu from "./Menu"
 import Notification from "./Notification"
 import Bookmark from "./Bookmark"
-import{useState} from "react"
+import Search from "./Search"
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 
 function Home(){
 	const [notify,setNotify] = useState(false)
 	const [mark,setMark] = useState(false)
+	const [search,setSearch] = useState(false)
 
 	function onNotify(){
 		setNotify(true)
@@ -20,12 +22,19 @@ function Home(){
 	function onMark(){
 		setMark(true)
 	}
+
+	function onSearch(){
+		setSearch(true)
+	}
+
 	return(
 		<div>
-			{	notify ?
-				<Notification/> :
+			{	search ? 
+					<Search/> :
+				notify ?
+					<Notification/> :
 				mark ?
-				<Bookmark/> :
+					<Bookmark/> :
 				<div>
 					<div className="home-top">
 						<div className="home-top1">
@@ -33,7 +42,7 @@ function Home(){
 							<h1>Wecare</h1>
 						</div>
 						<div className="home-top2">
-							<button>
+							<button onClick={onSearch}>
 								<MagnifyingGlass size={16} color="#35e01f" weight="bold" />
 							</button>
 							<button onClick={onNotify}>

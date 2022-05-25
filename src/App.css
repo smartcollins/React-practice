@@ -955,10 +955,36 @@
   border: 1px solid transparent;
 }
 
+.search-max{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
 
+.search-min{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #F7F7F7;
+}
 
+.search-min input{
+  border: none;
+  background-color: transparent;
+  color: black;
+}
 
+/*.search-min input::placeholder{
+  color: #ffd500;
+}*/
 
+.search-min input:focus{
+  outline: none;
+}
 
 
 
