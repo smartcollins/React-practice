@@ -1008,6 +1008,10 @@
   transform: translate(-50% -50%);
 }
 
+.search-null-main .book{
+  text-align: center;
+}
+
 .search-null-main h4{
   color: #35e01f;
 }
@@ -1022,7 +1026,7 @@
 }
 
 .search-img{
-  background-image: url(./image/mal.jpg);
+  position: relative;
   object-fit: contain;
   background-position: 50% 50%;
   background-size: cover;
@@ -1031,12 +1035,28 @@
   border-radius: 10px 0 0 10px;
 }
 
+.search-img{
+  background-image: url(./image/mal.jpg);
+}
+
+.search-img2{
+  background-image: url(./image/can.jpg);
+}
+
+.search-img3{
+  background-image: url(./image/baby.jpg);
+}
+
 .search-detail{
   width: 55vw;
   height: 35vh;
   /*background-color: red;*/
   overflow: hidden;
   border-radius: 10px;
+}
+
+.search-result:not(:last-child){
+  margin-bottom: 10px;
 }
 
 .search-note h3{
@@ -1050,7 +1070,6 @@
 }
 
 .search-note p{
-  color: blue;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

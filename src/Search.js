@@ -43,7 +43,9 @@ function Search(){
 						</div>
 						<div className="search-result">
 							<div className="search-img">
-								<BookmarkSimple size={20} color="#bbbbb" weight="duotone" />
+								<div className="urgent-mark">
+									<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+								</div>
 							</div>
 							<div className="search-detail">
 								<div className="search-note">
@@ -57,6 +59,48 @@ function Search(){
 								<div className="urgent-end">
 									<p><span>4,471</span> Donators</p>
 									<p><span>9</span> days left</p>
+								</div>
+							</div>
+						</div>
+						<div className="search-result">
+							<div className="search-img2">
+								<div className="urgent-mark">
+									<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+								</div>
+							</div>
+							<div className="search-detail">
+								<div className="search-note">
+									<h3>Help Cayna Brain cancer Surgrey</h3>
+									<div className="search-fund">
+										<span>$4,378 </span>
+										<p>fund raised from $7,380</p>
+									</div>
+								</div>
+								<div className="urgent-bar"></div>
+								<div className="urgent-end">
+									<p><span>2,475</span> Donators</p>
+									<p><span>21</span> days left</p>
+								</div>
+							</div>
+						</div>
+						<div className="search-result">
+							<div className="search-img3">
+								<div className="urgent-mark">
+									<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+								</div>
+							</div>
+							<div className="search-detail">
+								<div className="search-note">
+									<h3>Help Little Baby to Do Stom</h3>
+									<div className="search-fund">
+										<span>$2,275 </span>
+										<p>fund raised from $6,310</p>
+									</div>
+								</div>
+								<div className="urgent-bar"></div>
+								<div className="urgent-end">
+									<p><span>938</span> Donators</p>
+									<p><span>26</span> days left</p>
 								</div>
 							</div>
 						</div>
