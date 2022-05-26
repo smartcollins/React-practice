@@ -1,6 +1,6 @@
 import React from "react"
 import {useState} from "react"
-import {MagnifyingGlass,FunnelSimple,ArrowLeft,SmileySad} from "phosphor-react";
+import {MagnifyingGlass,FunnelSimple,ArrowLeft,SmileySad,BookmarkSimple} from "phosphor-react";
 
 function Search(){
 	const [sad,setSad] = useState(false)
@@ -36,7 +36,31 @@ function Search(){
 			<div>
 				{
 					sad ?
-					<h1>Welcome</h1> :
+					<div className="search-main">
+						<div className="search-txt">
+							<p>Search Result</p>
+							<p>3,459 found</p>
+						</div>
+						<div className="search-result">
+							<div className="search-img">
+								<BookmarkSimple size={20} color="#bbbbb" weight="duotone" />
+							</div>
+							<div className="search-detail">
+								<div className="search-note">
+									<h3>Help Overcome Malnutritio...</h3>
+									<div className="search-fund">
+										<span>$8,775 </span>
+										<p>fund raised from $10,540</p>
+									</div>
+								</div>
+								<div className="urgent-bar"></div>
+								<div className="urgent-end">
+									<p><span>4,471</span> Donators</p>
+									<p><span>9</span> days left</p>
+								</div>
+							</div>
+						</div>
+					</div> :
 					<div className="bookmark-null">
 						<div className="search-txt">
 							<p>Search Result</p>

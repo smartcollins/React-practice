@@ -1012,6 +1012,79 @@
   color: #35e01f;
 }
 
+.search-result{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*background-color: black;*/
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.search-img{
+  background-image: url(./image/mal.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 35vh;
+  width: 30vw;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-detail{
+  width: 55vw;
+  height: 35vh;
+  /*background-color: red;*/
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.search-note h3{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.search-note span{
+  color: #35e01f;
+}
+
+.search-note p{
+  color: blue;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.search-fund{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search-detail .urgent-bar{
+  width: 95%;
+}
+
+.search-detail .urgent-end{
+  justify-content: space-between;
+  /*margin: 0 10px;*/
+}
+
+.search-detail .urgent-end p{
+  width: 50%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+
+
+
 
 
 
