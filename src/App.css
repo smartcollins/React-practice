@@ -986,7 +986,31 @@
   outline: none;
 }
 
+.search-txt{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+
+.search-txt P:first-child{
+  color: lightgrey;
+}
+.search-txt p:last-child{
+  color: #35e01f;
+}
+
+.search-null-main{
+  /*background-color: red;*/
+  position: fixed;
+  bottom: 10%;
+  left: 25%;
+  transform: translate(-50% -50%);
+}
+
+.search-null-main h4{
+  color: #35e01f;
+}
 
 
 

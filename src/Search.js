@@ -3,6 +3,13 @@ import {useState} from "react"
 import {MagnifyingGlass,FunnelSimple,ArrowLeft,SmileySad} from "phosphor-react";
 
 function Search(){
+	const [sad,setSad] = useState(false)
+
+	function onSad(){
+		setSad(true)
+	}
+
+
 	return(
 		<div>
 			<div className="bookmark-top">
@@ -25,6 +32,25 @@ function Search(){
 				<button>Art</button>
 				<button>Music</button>
 				<button>Sport</button>
+			</div>
+			<div>
+				{
+					sad ?
+					<h1>Welcome</h1> :
+					<div className="bookmark-null">
+						<div className="search-txt">
+							<p>Search Result</p>
+							<p>0 found</p>
+						</div>
+						<div className="search-null-main">
+							<div className="book" onClick={onSad}>
+								<SmileySad size={30} color="#f0f0f0" weight="bold" />
+							</div>
+							<h4>No result found</h4>
+							<p>please try another keyword</p>
+						</div>
+					</div>
+				}
 			</div>
 		</div>
 		)
