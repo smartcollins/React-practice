@@ -557,11 +557,20 @@
   left: 30%;
 }
 
-.urgent-top, .coming-top{
+.urgent-top, .coming-top, .watch-top{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+}
+
+
+.urgent-top h3, .coming-top h3, .watch-top h3{
+  width: 85%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .urgent-top h5, .coming-top h5, .watch-top h5{
@@ -629,9 +638,14 @@
 }
 
 .urgent-note span, .coming-note span, .bookmark span{
-  margin-left: -40px;
+  margin-left: -50px;
   color: #35e01f;
+}
 
+
+.urgent-note h3, .coming-note h3{
+  text-align: left;
+  text-indent: 10px;
 }
 
 .bookmark-note h3{
@@ -653,6 +667,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /*text-indent: -10px;*/
+  margin: 0 -10px;
 }
 
 .urgent-end span, .coming-end span, .bookmark-end span{
@@ -666,7 +682,7 @@
 }
 
 .coming-img{
-  height: 50vh;
+  height: 30vh;
   background-image: url(./image/quake.jpg);
   background-position: 50% 50%;
   object-fit: contain;
@@ -675,23 +691,16 @@
   border-radius: 10px 10px 0 0;
 }
 
-.watch-top{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.watch-top h3{
-  width: 85%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .watch-video{
   display: grid;
   grid-template: auto/auto auto;
+  grid-gap: 10px;
+}
+
+.watch-main-video{
+  display: grid;
+  /*grid-template: auto auto/ auto auto;*/
+  grid-template: auto auto auto /auto auto;
   grid-gap: 10px;
 }
 
@@ -712,13 +721,20 @@
   text-overflow: ellipsis;
 }
 
-.watch1, .watch2{
+.watch1, .watch2, .watch-main, .watch-main2, .watch-main3, .watch-main4, .watch-main5, .watch-main6{
   position: relative;
   background-position: 50% 50%;
   background-size: cover;
   object-fit: contain;
-  height: 30vh;
   border-radius: 20px;
+}
+
+.watch1, .watch2{
+  height: 30vh;
+}
+
+.watch-main{
+  height: 50vh;
 }
 
 .watch1{
@@ -728,6 +744,32 @@
 .watch2{
   background-image: url(./image/baby2.jpg);
 }
+
+.watch-main{
+  background-image: url(./image/mal.jpg);
+}
+
+.watch-main2{
+  background-image: url(./image/baby.jpg);
+}
+
+.watch-main3{
+  background-image: url(./image/baby2.jpg);
+}
+
+.watch-main4{
+  background-image: url(./image/patient.jpg);
+}
+
+.watch-main5{
+  background-image: url(./image/orphan.jpg);
+}
+
+.watch-main6{
+  background-image: url(./image/can.jpg);
+}
+
+
 
 .prayer-top{
   display: flex;
@@ -818,6 +860,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 
@@ -827,6 +870,11 @@
 
 .notification-top h1, .bookmark-top h1{
   margin-left: 10px;
+  width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
 }
 
 .notify-null-main, .bookmark-null-main{
@@ -1130,6 +1178,53 @@
 
 .urgent2 .search-max{
   justify-content: space-between;
+}
+
+.coming2 .urgent-btn, .urgent2 .urgent-btn{
+  margin: 10px 0;
+}
+
+.watchfull{
+  position: relative;
+  background-image: url(./image/baby.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100vh;
+  width: 90vw;
+}
+
+
+.watchfull-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  /*bottom: 20%;*/
+  /*top: 10%;*/
+  width: 90vw;
+  background-color: red;
+}
+
+.watchfull-end div:not(:last-child){
+  display: flex;
+  align-items: center;
+  /*justify-content: space-around;*/
+  justify-content: space-between;
+  width: 100%;
+}
+
+.watchfull-end div:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 10px;
+  background-color: blue;
+}
+
+.watchfull-end div:first-child{
+  /*background-color: yellow;*/
 }
 
 

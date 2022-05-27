@@ -42,10 +42,6 @@ function Urgent2(){
 					</div>
 
 					<div className="search-main">
-						<div className="search-txt">
-							<p>Search Result</p>
-							<p>3,459 found</p>
-						</div>
 						<div className="search-result">
 							<div className="search-img4">
 								<div className="urgent-mark">

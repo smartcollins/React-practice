@@ -11,7 +11,7 @@ function Coming2(){
 	}
 
 	return(
-		<div>
+		<div className="coming2">
 			{
 				back ?
 				<Coming/> :
@@ -19,7 +19,7 @@ function Coming2(){
 					<div className="bookmark-top">
 						<div className="back">
 							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
-							<h1>Coming to an end</h1>
+							<h1>Coming to an End</h1>
 						</div>
 						<button className="dot3">
 							<DotsThreeVertical size={30} color="#35e01f" />
@@ -40,12 +40,7 @@ function Coming2(){
 						<button>Disaster</button>
 						<button>Education</button>
 					</div>
-
 					<div className="search-main">
-						<div className="search-txt">
-							<p>Search Result</p>
-							<p>3,459 found</p>
-						</div>
 						<div className="search-result">
 							<div className="search-img6">
 								<div className="urgent-mark">
