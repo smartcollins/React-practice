@@ -11,7 +11,7 @@ function Search(){
 
 
 	return(
-		<div>
+		<div className="search">
 			<div className="bookmark-top">
 				<div className="back">
 					<ArrowLeft size={30} color="#35e01f" />
@@ -97,7 +97,9 @@ function Search(){
 										<p>fund raised from $6,310</p>
 									</div>
 								</div>
-								<div className="urgent-bar"></div>
+								<div className="search-bar-min">
+									<div className="urgent-bar"></div>
+								</div>
 								<div className="urgent-end">
 									<p><span>938</span> Donators</p>
 									<p><span>26</span> days left</p>

@@ -955,6 +955,10 @@
   border: 1px solid transparent;
 }
 
+.search{
+  margin-top: -10vh;
+}
+
 .search-max{
   display: flex;
   align-items: center;
@@ -1020,19 +1024,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*background-color: black;*/
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
+  overflow: hidden;
 }
 
-.search-img{
+.search-img, .search-img2, .search-img3{
   position: relative;
   object-fit: contain;
   background-position: 50% 50%;
   background-size: cover;
   height: 35vh;
   width: 30vw;
-  border-radius: 10px 0 0 10px;
+  /*border-radius: 10px 0 0 10px;*/
 }
 
 .search-img{
@@ -1057,6 +1061,10 @@
 
 .search-result:not(:last-child){
   margin-bottom: 10px;
+}
+
+.search-bar-min .urgent-bar{
+  background: linear-gradient(90deg, #35e01f,#d6ffed 40%);
 }
 
 .search-note h3{
