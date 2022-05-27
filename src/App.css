@@ -577,13 +577,14 @@
   color: white;
   border: 1px solid transparent;
   border-radius: 15px;
-  width: 20%;
-  padding: 2px;
+  width: 50%;
+  margin: 0 5px;
   background-color: #35e01f;
 }
 
 .urgent-btn button:not(:first-child){
-  padding: 2px 9px;
+  margin: 0 5px;
+  width: 50%;
   background-color: white;
   color: #35e01f;
   border-radius: 15px;
@@ -1029,7 +1030,7 @@
   overflow: hidden;
 }
 
-.search-img, .search-img2, .search-img3{
+.search-img, .search-img2, .search-img3, .search-img4, .search-img5, .search-img6, .search-img7, .search-img8{
   position: relative;
   object-fit: contain;
   background-position: 50% 50%;
@@ -1049,6 +1050,26 @@
 
 .search-img3{
   background-image: url(./image/baby.jpg);
+}
+
+.search-img4{
+  background-image: url(./image/volcano.jpg);
+}
+
+.search-img5{
+  background-image: url(./image/flood1.jpg);
+}
+
+.search-img6{
+  background-image: url(./image/poor.jpg);
+}
+
+.search-img7{
+  background-image: url(./image/baby2.jpg);
+}
+
+.search-img8{
+  background-image: url(./image/flood2.jpg);
 }
 
 .search-detail{
@@ -1105,6 +1126,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.urgent2 .search-max{
+  justify-content: space-between;
 }
 
 
