@@ -19,7 +19,7 @@ function Urgent2(){
 					<div className="bookmark-top">
 						<div className="back">
 							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
-							<h1>Urgent Fundraising</h1>
+							<h3>Urgent Fundraising</h3>
 						</div>
 						<button className="dot3">
 							<DotsThreeVertical size={30} color="#35e01f" />

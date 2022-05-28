@@ -81,7 +81,7 @@ function Home(){
 					<Coming/>
 					<Watch/>
 					<Prayer/>
-					<Menu/>
+					
 				</div>
 			}
 		</div>

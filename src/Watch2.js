@@ -26,7 +26,7 @@ function Watch2(){
 					<div className="bookmark-top">
 						<div className="back">
 							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
-							<h1>Watch the impact of</h1>
+							<h3>Watch the impact of</h3>
 						</div>
 						<button className="dot3">
 							<DotsThreeVertical size={30} color="#35e01f" />

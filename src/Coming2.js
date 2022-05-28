@@ -19,7 +19,7 @@ function Coming2(){
 					<div className="bookmark-top">
 						<div className="back">
 							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
-							<h1>Coming to an End</h1>
+							<h3>Coming to an End</h3>
 						</div>
 						<button className="dot3">
 							<DotsThreeVertical size={30} color="#35e01f" />

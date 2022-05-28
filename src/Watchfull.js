@@ -16,13 +16,14 @@ function Watchfull(){
 				back ?
 				<Watch2/> :
 				<div>
-					<div className="watchfull"></div>
-					<div className="back">
-						<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
-					</div>
-					<div className="watchfull-note">
-						<h3>Brian Surgrey was Successful</h3>
-						<div className="urgent-bar"></div>
+					<div className="watchfull">
+						<div className="back">
+							<ArrowLeft size={40} color="#35e01f" onClick={onBack} />
+						</div>
+						<div className="watchfull-note">
+							<h3>Brian Surgrey was Successful</h3>
+							<div className="urgent-bar"></div>
+						</div>
 						<div className="watchfull-end">
 							<div>
 								<p>03:27 / 10:38</p>
