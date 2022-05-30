@@ -6,6 +6,7 @@ import {ArrowLeft,Circle,CheckCircle} from "phosphor-react";
 function Pin(){
 	const [create,setCreate] = useState(false)
 	const [home,setHome] = useState(false)
+	const [back,setBack] = useState(false)
 
 	function onCreate(){
 		setCreate(true)
@@ -15,10 +16,16 @@ function Pin(){
 		setHome(true)
 	}
 
+	function onBack(){
+		setBack(true)
+	}
+
 
 	return(
 		<div>
 			{	
+				back ?
+				<Interest/> :
 				home ? 
 					<Home/> :
 				create ? 
@@ -37,7 +44,7 @@ function Pin(){
 					</div> :
 					<div>
 						<div className="back">
-							<ArrowLeft size={32} color="#2fe22c" weight="duotone"/>
+							<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack}/>
 							<h2>Create Your Pin</h2>
 						</div>
 						<p>Please remember this PIN because it will be used when you want to to up, withdraw, or donate.</p>

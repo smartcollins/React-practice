@@ -5,9 +5,18 @@ import {ArrowLeft,DotsThreeVertical,MagnifyingGlass,DotsThreeOutlineVertical,Hea
 
 function Prayer2(){
 	const [back,setBack] = useState(false)
+	const [send,setSend] = useState(false)
 
 	function onBack(){
 		setBack(true)
+	}
+
+	function onSend(){
+		setSend(true)
+	}
+
+	const style ={
+		border: send && "2px solid #0da542"
 	}
 
 	return(
@@ -115,7 +124,7 @@ function Prayer2(){
 						</div>
 					</div>
 					<div className="prayer-send">
-						<div className="send">
+						<div className="send" onClick={onSend} style={style}>
 							<input placeholder="Send your prayers..." />
 							<PaperPlaneRight size={25} color="#0da542" weight="bold" />
 						</div>

@@ -291,6 +291,16 @@
   margin-bottom: 20vh;
 }
 
+.resend .forgot-end{
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+}
+
 .code-slot button{
   border: 1px solid #05f020;
   background-color: transparent;
@@ -1068,7 +1078,8 @@
   position: fixed;
   bottom: 10%;
   left: 25%;
-  transform: translate(-50% -50%);
+  /*transform: translate(-50% ,-50%);*/
+  transform: translate(-50%, -50%);
 }
 
 .search-null-main .book{

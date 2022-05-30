@@ -1,12 +1,19 @@
 import {useState} from "react";
 import {ArrowLeft,ChatText,Envelope} from "phosphor-react";
 import Ready from "./Ready"
+import Forgot from "./Forgot"
 
 function Reset2(){
 	const [save,setSave] = useState(false);
 
+	const [back,setBack] = useState(false);
+
 	function onSave(){
 		setSave(true)
+	}
+
+	function onBack(){
+		setBack(true)
 	}
 
 	const [form,setForm] = useState({
@@ -34,13 +41,14 @@ function Reset2(){
 
 	return(
 			<div>
-				{
+				{	back ?
+					<Forgot/> :
 					save ? 
 						<Ready/> :
 					<div>
 						<div className="back">
-							<ArrowLeft size={32} color="#2fe22c" weight="duotone" />
-							<h2>Forgot password</h2>
+							<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack} />
+							<h2>Reset password</h2>
 						</div>
 						<img src="https://livex.co.za/svg/secure_server.svg" alt="logo"/>
 						<div className="form-container">

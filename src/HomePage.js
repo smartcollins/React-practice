@@ -2,23 +2,31 @@ import {useState} from "react";
 import CountryDropdown from 'country-dropdown-with-flags-for-react';  
 import {ArrowLeft} from "phosphor-react";
 import Profile from "./Profile";
+import SignUp2 from "./SignUp2"
 
 
 function HomePage(){
 	const [profile,setProfile] = useState(false)
 
+	const [back,setBack] = useState(false)
+
 	function onProfile(){
 		setProfile(true)
 	}
 
+	function onBack(){
+		setBack(true)
+	}
+
 	return(
 			<div>
-				{
+				{	back ?
+					<SignUp2/> :
 					profile ?
 					<Profile/> :
 					<div className="home-page">
 						<div className="back">
-							<ArrowLeft size={32} color="#2fe22c" weight="duotone"/>
+							<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack} />
 							<h2>Select your country</h2>
 						</div>
 						<CountryDropdown  id="UNIQUE_ID" className='select-country'

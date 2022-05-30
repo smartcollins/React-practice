@@ -42,8 +42,7 @@ function SignUp2(){
 					signIn ?
 						<SignIn/> :
 					signUp ?
-						<HomePage
-/> :
+						<HomePage/> :
 					<div className="SignUp2">
 						<img className="people2" src="https://5.imimg.com/data5/AA/IF/TH/SELLER-1594742/download-free-bulk-whatsapp-sending-software-1000x1000.png" alt="head"/>
 						<h2>We care</h2>

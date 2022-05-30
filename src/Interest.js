@@ -3,11 +3,13 @@ import {ArrowLeft,GraduationCap,UsersThree,FirstAidKit,Buildings,Palette,GlobeHe
 ,Wheelchair,Users,Gift,YinYang,Heartbeat}  from "phosphor-react";
 
 import Pin from "./Pin"
+import Profile from "./Profile"
 
 
 function Interest(){
 	const[interest,setInterest] = useState(false)
 	const[next,setNext] = useState(false)
+	const [back,setBack] = useState(false)
 
 	function onInterest(){
 		setInterest(oldInterest=>!interest)
@@ -17,18 +19,23 @@ function Interest(){
 		setNext(true)
 	}
 
+	function onBack(){
+		setBack(true)
+	}
+
 	const style={
 		backgroundColor: interest ? "#35e01f" : "blue"
 	}
 
 	return(
 		<div>
-			{
+			{	back ? 
+				<Profile/> :
 				next ? 
 				<Pin/> :
 				<div className="interest">
 					<div className="back">
-						<ArrowLeft size={32} color="#2fe22c" weight="duotone"/>
+						<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack}/>
 						<h2>Select Your Interest</h2>
 					</div>
 					<p>Choose your interest to donate. Dont worry you can always change it later</p>
