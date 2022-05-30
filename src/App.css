@@ -785,6 +785,7 @@
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid grey;
+  margin: 0 10px;
 }
 
 .prayer-detail{
@@ -1257,7 +1258,6 @@
   margin-left: 10px;
 }
 
-
 .prayer2-top{
   display: flex;
   align-items: center;
@@ -1274,8 +1274,38 @@
 
 .prayer2 .prayer-card{
   margin-top: 10px;
-  /*background-color: red;*/
 }
+
+.prayer-send{
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.send{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.send input{
+  text-indent: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.send input:focus{
+  outline: none;
+}
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 import React from "react"
 import {useState} from "react"
 import Prayer from "./Prayer"
-import {ArrowLeft,DotsThreeVertical,MagnifyingGlass,DotsThreeOutlineVertical,Heart,ShareNetwork} from "phosphor-react"
+import {ArrowLeft,DotsThreeVertical,MagnifyingGlass,DotsThreeOutlineVertical,Heart,ShareNetwork,PaperPlaneRight} from "phosphor-react"
 
 function Prayer2(){
 	const [back,setBack] = useState(false)
@@ -30,7 +30,7 @@ function Prayer2(){
 							</button>
 						</div>
 					</div>
-					<div>
+					<div className="prayer-all">
 						<div className="prayer-card">
 							<div className="prayer-top">
 								<div className="prayer-detail">
@@ -58,21 +58,49 @@ function Prayer2(){
 							</div>
 						</div>
 					</div>
-					<div>
+					<div className="prayer-all">
 						<div className="prayer-card">
 							<div className="prayer-top">
 								<div className="prayer-detail">
 									<div className="prayer-img"></div>
 									<div className="prayer-profile">
-										<h6>Esther Howard</h6>
+										<h6>Jane Cooper</h6>
 										<span>Today</span>
 									</div>
 								</div>
 								<DotsThreeOutlineVertical size={20} color="#0da542" weight="light" />
 							</div>
 							<div className="prayer-comment">
-								<p>Hopefully Audrey can get surgrey soon, recover from her illeness, and play with her friends..</p>
-								<span>You and 48 others sent this prayer</span>
+								<p>Hopefully the victims affected by flash flood disaster in Surabuya will soon get better and be healthy. </p>
+								<span>You and 126 others sent this prayer</span>
+								<div className="prayer-like">
+									<div>
+										<Heart size={20} color="#0da542" />
+										<p>Aamin</p>
+									</div>
+									<div>
+										<ShareNetwork size={20} color="#0da542" weight="fill" />
+										<p>share</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="prayer-all">
+						<div className="prayer-card">
+							<div className="prayer-top">
+								<div className="prayer-detail">
+									<div className="prayer-img"></div>
+									<div className="prayer-profile">
+										<h6>Jenny Wilson</h6>
+										<span>Today</span>
+									</div>
+								</div>
+								<DotsThreeOutlineVertical size={20} color="#0da542" weight="light" />
+							</div>
+							<div className="prayer-comment">
+								<p>Hopefully orphans in Africa can get treatment and nutrition improvement soon..</p>
+								<span>You and 118 others sent this prayer</span>
 								<div className="prayer-like">
 									<div>
 										<Heart size={20} color="#0da542" weight="fill" />
@@ -86,60 +114,10 @@ function Prayer2(){
 							</div>
 						</div>
 					</div>
-					<div>
-						<div className="prayer-card">
-							<div className="prayer-top">
-								<div className="prayer-detail">
-									<div className="prayer-img"></div>
-									<div className="prayer-profile">
-										<h6>Esther Howard</h6>
-										<span>Today</span>
-									</div>
-								</div>
-								<DotsThreeOutlineVertical size={20} color="#0da542" weight="light" />
-							</div>
-							<div className="prayer-comment">
-								<p>Hopefully Audrey can get surgrey soon, recover from her illeness, and play with her friends..</p>
-								<span>You and 48 others sent this prayer</span>
-								<div className="prayer-like">
-									<div>
-										<Heart size={20} color="#0da542" weight="fill" />
-										<p>Aamin</p>
-									</div>
-									<div>
-										<ShareNetwork size={20} color="#0da542" weight="fill" />
-										<p>share</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div className="prayer-card">
-							<div className="prayer-top">
-								<div className="prayer-detail">
-									<div className="prayer-img"></div>
-									<div className="prayer-profile">
-										<h6>Esther Howard</h6>
-										<span>Today</span>
-									</div>
-								</div>
-								<DotsThreeOutlineVertical size={20} color="#0da542" weight="light" />
-							</div>
-							<div className="prayer-comment">
-								<p>Hopefully Audrey can get surgrey soon, recover from her illeness, and play with her friends..</p>
-								<span>You and 48 others sent this prayer</span>
-								<div className="prayer-like">
-									<div>
-										<Heart size={20} color="#0da542" weight="fill" />
-										<p>Aamin</p>
-									</div>
-									<div>
-										<ShareNetwork size={20} color="#0da542" weight="fill" />
-										<p>share</p>
-									</div>
-								</div>
-							</div>
+					<div className="prayer-send">
+						<div className="send">
+							<input placeholder="Send your prayers..." />
+							<PaperPlaneRight size={25} color="#0da542" weight="bold" />
 						</div>
 					</div>
 				</div>
