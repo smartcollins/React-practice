@@ -1313,7 +1313,107 @@
   outline: none;
 }
 
+.donation{
+  background-color: beige;
+  margin-top: -10vh;
+  height: 100vh;
+}
 
+.donation-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donation-top-btn button{
+  border-radius: 5px;
+  background-color: rgba(53, 224, 31, 0.2);
+  margin: 10px 5px;
+  border: 1px solid transparent;
+}
+
+.donation-img{
+  background-image: url(./image/baby2.jpg);
+  position: relative;
+  height: 50vh;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.donation-circle{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.donation-circle *{
+  margin: 2px;
+}
+
+
+.donation-txt-top{
+  display: flex;
+  align-items: center;
+  /*justify-content: space-evenly;*/
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.donation-txt-top p:first-child{
+  color: #35e01f;
+  margin-right: 10px;
+}
+
+.donation .urgent-bar{
+  width: 95%;
+}
+
+.donation .urgent-end{
+  margin: 0 10px;
+  justify-content: space-between;
+}
+
+.donation-mid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.donation-mid button{
+  color: #35e01f;
+  border-radius: 10px;
+  border: 1px solid #35e01f;
+  background-color: transparent;
+  /*padding: 0 10px;*/
+  width: 25%;
+}
+
+.donation-mid-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.donators{
+  background-image: url(./image/dp.jpg);
+  padding: 10px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.donation-mid-end p{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.donation .nxt{
+  width: 95%;
+}
 
 
 

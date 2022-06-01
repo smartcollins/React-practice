@@ -8,12 +8,18 @@ import Menu from "./Menu"
 import Notification from "./Notification"
 import Bookmark from "./Bookmark"
 import Search from "./Search"
+import Donation from "./Donation"
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 
 function Home(){
+	const [logo,setLogo] = useState(false)
 	const [notify,setNotify] = useState(false)
 	const [mark,setMark] = useState(false)
 	const [search,setSearch] = useState(false)
+
+	function onLogo(){
+		setLogo(true)
+	}
 
 	function onNotify(){
 		setNotify(true)
@@ -28,8 +34,10 @@ function Home(){
 	}
 
 	return(
-		<div>
-			{	search ? 
+		<div>	
+			{	logo ? 
+					<Donation/> :
+				search ? 
 					<Search/> :
 				notify ?
 					<Notification/> :
@@ -38,7 +46,7 @@ function Home(){
 				<div>
 					<div className="home-top">
 						<div className="home-top1">
-							<UsersThree size={30} color="#35e01f" />
+							<UsersThree size={40} color="#35e01f" weight="duotone" onClick={onLogo}/>
 							<h1>Wecare</h1>
 						</div>
 						<div className="home-top2">
