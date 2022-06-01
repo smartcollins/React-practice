@@ -1,5 +1,6 @@
 import {useState} from "react"
 import Home from "./Home"
+import Fundraiser from "./Fundraiser"
 import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle} from "phosphor-react"
 
 function Donation(){
@@ -61,6 +62,7 @@ function Donation(){
 						</div>
 						<button className="nxt">Donate Now</button>
 					</div>
+					<Fundraiser/>
 				</div>
 			}
 		</div>
