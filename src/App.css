@@ -653,7 +653,7 @@
   position: absolute;
   top: 10%;
   right: 5%;
-  background-color: #35e01f;
+  /*background-color: #35se01f;*/
   padding: 5px;
   border-radius: 10px;
 }
@@ -899,10 +899,10 @@
 
 .notify-null-main, .bookmark-null-main{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 60vw;
+  transform: translate(-50%,-50%);
+  /*width: 60vw;*/
 }
 
 .notify-null-main p, .bookmark-null-main p{
@@ -918,7 +918,7 @@
 }
 
 .notify,.book{
-  text-align: left;
+  /*text-align: left;*/ 
 }
 
 .notify-bar{
@@ -995,6 +995,7 @@
   top: 60%;
   transform: translate(-50%, -20%);
   background-color: gold;
+  /*background-color: white;*/
   border-radius: 20px;
   width: 100%;
   padding: 5px 10px;
@@ -1074,11 +1075,9 @@
 }
 
 .search-null-main{
-  /*background-color: red;*/
   position: fixed;
-  bottom: 10%;
-  left: 25%;
-  /*transform: translate(-50% ,-50%);*/
+  bottom: 10px;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
