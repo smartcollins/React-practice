@@ -1,27 +1,35 @@
 import {useState} from "react"
 import Home from "./Home"
 import Fundraiser from "./Fundraiser"
+import Share from "./Share"
 import {ArrowLeft,ShareNetwork,BookmarkSimple,ArrowRight,Circle} from "phosphor-react"
 
 function Donation(){
 	const [back,setBack] = useState(false)
+	const [share,setShare] = useState(false)
 
 	function onBack(){
 		setBack(true)
 	}
 
+	function onShare(){
+		setShare(true)
+	}
+
 
 	return(
 		<div>
-			{
+			{	
 				back ?
 				<Home/> :
+				share ?
+				<Share/> :
 				<div className="donation">
 					<div className="donation-img">
 						<div className="donation-top">
 							<ArrowLeft size={30} color="#35e01f" weight="duotone" onClick={setBack}/>
 							<div className="donation-top-btn">
-								<button>
+								<button onClick={onShare}>
 									<ShareNetwork size={30} color="#35e01f" weight="light"/>
 									</button>
 								<button>

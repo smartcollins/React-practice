@@ -80,7 +80,7 @@ function Fundraiser(){
 						<div>
 							<h3>Story</h3>
 							<div className="story-dt">
-								<p className={read && "story"}>
+								<p className={read ? "story" : undefined}>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
