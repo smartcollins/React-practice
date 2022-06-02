@@ -1314,7 +1314,7 @@
 }
 
 .donation{
-  background-color: beige;
+  /*background-color: beige;*/
   margin-top: -10vh;
   height: 100vh;
 }
@@ -1350,6 +1350,10 @@
 
 .donation-circle *{
   margin: 2px;
+}
+
+.donation-txt{
+  border-bottom: 1px solid lightgrey;
 }
 
 
@@ -1413,11 +1417,46 @@
 
 .donation .nxt{
   width: 95%;
+  margin-bottom: 20px;
 }
 
+.fundraiser{
+  text-align: left;
+}
 
+.fund-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.fund-main-mid{
+  display: flex;
+  align-items: center;
+}
 
+.fund-main-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.fund-main button:first-child, .fund-main-last button:first-child{
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #D8FDE1;
+  border: 1px solid transparent;
+  margin-right: 10px;
+}
+
+.fund-main button:last-child{
+  padding: 5px 20px;
+  color: #35e01f;
+  background-color: white;
+  border: 1px solid #35e01f;
+  border-radius: 20px;
+}
 
 
 
