@@ -2,6 +2,16 @@ import {useState} from "react"
 import {CircleWavyCheck,HouseLine,User,FirstAidKit} from "phosphor-react"
 
 function Fundraiser(){
+	const [read,setRead] = useState(false)
+
+	function onRead(){
+		setRead(oldread => !read)
+	}
+
+	const style={
+		color: read ? "#35e01f":"red"
+	}
+
 	return(
 		<div>
 			<div className="fundraiser">
@@ -50,6 +60,24 @@ function Fundraiser(){
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div className="fund-usage">
+					<h3>Fund Usage Plan</h3>
+					<button>View Plan</button>
+				</div>
+				<div>
+					<h3>Story</h3>
+					<div className="story-dt">
+						<p className={read && "story"}>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p onClick={onRead} style={style}>{read?"Read more...":"Read less"}</p>
 					</div>
 				</div>
 			</div>

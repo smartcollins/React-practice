@@ -1454,12 +1454,40 @@
   padding: 5px 20px;
   color: #35e01f;
   background-color: white;
-  border: 1px solid #35e01f;
+  border: 2px solid #35e01f;
   border-radius: 20px;
 }
 
+.fund-usage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.fund-usage button{
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #35e01f;
+  background-color: transparent;
+  border: 2px solid #35e01f;
+}
+/*
+.story-dt{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}*/
 
+.story-dt p:last-child{
+  margin-top: -10px;
+}
+
+.story{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
 
 
 
