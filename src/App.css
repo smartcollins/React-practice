@@ -1607,6 +1607,44 @@
   padding: 10px;
 }
 
+.donator-info{
+  display: flex;
+  align-items: center;
+}
+
+.donator-img{
+  background-image: url(./image/dp.jpg);
+  padding: 20px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.donator-ayms{
+  display: flex;
+  align-items: center;
+}
+
+.donator-ayms p,.donator-info p{
+  font-weight: bold;
+}
+
+
+.donator-ayms div{
+  background-color: #35e01f;
+  /*border: 1px solid black;*/
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+
+}
+
+
+
+
+
 
 
 

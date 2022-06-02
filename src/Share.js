@@ -15,8 +15,8 @@ function Share(){
 				top ?
 				<Donators/> :
 				<div className="share">
-					<div className="share-top" onClick={onTop}>
-						<div className="donation-img">
+					<div className="share-top">
+						<div className="donation-img" onClick={onTop}>
 							<div className="donation-circle">
 								<Circle size={15} color="#35e01f" weight="fill"/>
 								<Circle size={15} color="#FaFaFa" weight="duotone"/>
