@@ -653,7 +653,7 @@
   position: absolute;
   top: 10%;
   right: 5%;
-  /*background-color: #35se01f;*/
+  background-color: #35e01f;
   padding: 5px;
   border-radius: 10px;
 }
@@ -1716,17 +1716,7 @@
   justify-content: space-around;
 }
 
-.profile-mid-end button:not(:first-child){
-  background-color: transparent;
-  color: #35e01f;
-  border: 1px solid #35e01f;
-  padding: 5px 15px;
-  border-radius: 20px;
-}
-
-.profile-mid-end button:first-child{
-  background-color: #35e01f;
-  color: white;
+.profile-mid-end button{
   border: 1px solid transparent;
   padding: 5px 15px;
   border-radius: 20px;
@@ -1738,6 +1728,17 @@
 
 .profile-end p{
   color: grey;
+}
+
+.info-fund .search-result .search-img3{
+  height: 25vh;
+}
+.info-fund .search-result .search-detail{
+  height: 25vh;
+}
+
+.info-fund .search-result .search-img7{
+  height: 25vh;
 }
 
 
