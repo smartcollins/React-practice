@@ -9,7 +9,7 @@ function Donate(){
 	const [back,setBack] = useState(false)
 
 	function onAnonymus(){
-		setAnonymus(true)
+		setAnonymus(oldAnonymus => !anonymus)
 	}
 
 	function onBtn(){

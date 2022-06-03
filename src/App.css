@@ -1627,10 +1627,9 @@
   align-items: center;
 }
 
-.donator-ayms p,.donator-info p{
+.donator-ayms p, .donator-info p{
   font-weight: bold;
 }
-
 
 .donator-ayms div{
   background-color: #35e01f;
@@ -1638,10 +1637,108 @@
   padding: 5px;
   border-radius: 50%;
   margin-right: 10px;
-
 }
 
+.profile{
+  height: 100%;
+  margin-top: -10vh;
+}
 
+.profile-top-btn{
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #D8FDE1;
+  border: 1px solid transparent;
+}
+
+.profile-top-txt{
+  display: flex;
+  align-items: center;
+}
+
+.profile-top-txt div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.profile-top-txt h3{
+  margin-right: 10px;
+}
+
+.profile-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-btn button{
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  border-style: none solid;
+}
+
+.profile-mid{
+  margin: 20px 0;
+  border: 1px solid lightgrey;
+  border-style: solid none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.profile-mid button:first-child, .profile-mid button:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.profile-mid button:first-child{
+  background-color: #35e01f;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.profile-mid button:last-child{
+  background-color: transparent;
+  color: #35e01f;
+  border: 1px solid #35e01f;
+}
+
+.profile-mid-end{
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-mid-end button:not(:first-child){
+  background-color: transparent;
+  color: #35e01f;
+  border: 1px solid #35e01f;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.profile-mid-end button:first-child{
+  background-color: #35e01f;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.profile-end{
+  text-align: left;
+}
+
+.profile-end p{
+  color: grey;
+}
 
 
 

@@ -12,14 +12,14 @@ function Donators(){
 	}
 
 	function onHealthy(){
-		setBack(true)
+		setHealthy(true)
 	}
 
 	return(
 		<div>
 			{
 				healthy ?
-				<h1>ArrowLeft</h1> :
+				<Info/> :
 				back ?
 				<Share/> :
 				<div className="donators-main">
