@@ -263,7 +263,7 @@
 }
 
 .logo-back{
-  background-color: #F7F7F7;
+  background-color: #D8FDE1;
   border-radius: 100%;
   padding: 10px;
 }
@@ -1740,6 +1740,18 @@
 .info-fund .search-result .search-img7{
   height: 25vh;
 }
+
+.payment-btn .home-mid{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.payment-end{
+  margin-top: 20px;
+}
+
 
 
 

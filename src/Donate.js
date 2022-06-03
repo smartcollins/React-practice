@@ -1,5 +1,5 @@
 import {useState} from "react"
-import Pin from "./Pin"
+import Payment from "./Payment"
 import Fundraiser from "./Fundraiser"
 import {ArrowLeft,DotsThreeVertical} from "phosphor-react"
 
@@ -26,7 +26,7 @@ function Donate(){
 				back ?
 				<Fundraiser/> :
 				btn ? 
-				<h1>Section for pin</h1>:
+				<Payment/>:
 				<div className="donate-main">
 					<div className="bookmark-top">
 						<div className="back">

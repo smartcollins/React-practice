@@ -66,7 +66,8 @@ function Info(){
 	return(
 		<div>
 			{
-				
+				back ?
+				<Donators/> :
 				<div className="profile">
 					<div className="notification-top">
 						<div className="back">
