@@ -6,6 +6,7 @@ import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft,SmileySad,BookmarkSimp
 function MyDonation(){
 	const [make,setMake] = useState(false)
 	const [see,setSee] = useState(false)
+	const [back,setBack] = useState(false)
 
 	function onMake(){
 		setMake(true)
@@ -13,6 +14,10 @@ function MyDonation(){
 
 	function onSee(){
 		setSee(true)
+	}
+
+	function onBack(){
+		setBack(true)
 	}
 
 	return(
@@ -83,6 +88,69 @@ function MyDonation(){
 					</div>
 					
 					{
+						back ?
+						<div>
+							<div className="urgent-top">
+										<h3>Donation(7)</h3>
+										<h5 onClick={onSee}>See all</h5>
+									</div>
+									<div className="mydonation-donation">
+										<div className="search-result">
+											<div className="search-img4">
+												<div className="urgent-mark">
+													<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+												</div>
+											</div>
+											<div className="search-detail">
+												<div className="search-note">
+													<h3>Help Victims of the Impact of Volcano</h3>
+													<div className="search-fund">
+														<span>$2,277</span>
+														<p>fund raised from $6,310</p>
+													</div>
+												</div>
+												<div className="search-bar-min">
+													<div className="urgent-bar"></div>
+												</div>
+												<div className="urgent-end">
+													<p><span>938</span> Donators</p>
+													<p><span>26</span> days left</p>
+												</div>
+											</div>
+										</div>
+										<div className="mydonation-donation-end">
+											<h4>You have Donated<span>$22</span></h4>
+											<button>Donate Again</button>
+										</div>
+									</div>
+									<div className="mydonation-donation">
+										<div className="search-result">
+											<div className="search-img5">
+												<div className="urgent-mark">
+													<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+												</div>
+											</div>
+											<div className="search-detail">
+												<div className="search-note">
+													<h3>Help Victims of Flash Flood In Asia</h3>
+													<div className="search-fund">
+														<span>$8,775 </span>
+														<p>fund raised from $10,540</p>
+													</div>
+												</div>
+												<div className="urgent-bar"></div>
+												<div className="urgent-end">
+													<p><span>4,471</span> Donators</p>
+													<p><span>9</span> days left</p>
+												</div>
+											</div>
+										</div>
+										<div className="mydonation-donation-end">
+											<h4>You have Donated<span>$22</span></h4>
+											<button>Donate Again</button>
+										</div>
+									</div>
+						</div> :
 						make ?
 						<div>
 							{
@@ -90,7 +158,7 @@ function MyDonation(){
 								<div>
 									<div className="bookmark-top">
 										<div className="back">
-											<ArrowLeft size={30} color="#35e01f"/>
+											<ArrowLeft size={30} color="#35e01f" onClick={onBack}/>
 											<h1>My Donation (7)</h1>
 										</div>
 										<button className="dot3">
