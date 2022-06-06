@@ -23,7 +23,7 @@ function Payment(){
 				<Donate/> :
 				nxt ?
 				<Pin
-					inpayment="true"
+					inpayment={true}
 				/> :
 				<div>
 					<div className="bookmark-top">

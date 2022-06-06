@@ -466,6 +466,7 @@
   padding: 20px;
   border-radius: 50%;
   width: 10vw;
+  /*width: 10%;*/
 }
 
 .success {
@@ -857,6 +858,8 @@
   left: 50%;
   bottom: 0;
   transform: translate(-50%, -10%);
+  /*transform: translate(-50% ,15%);
+  background-color: gold;*/
 }
 
 .menu *{
@@ -1751,6 +1754,60 @@
 .payment-end{
   margin-top: 20px;
 }
+
+.calender{
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.calender-date{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  justify-content: space-between;
+}
+
+.calender-top{
+  display: grid;
+  grid-template: auto/auto auto auto auto auto auto auto;
+  grid-gap: 2px;
+}
+
+.calender-top button{
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+}
+
+.calender-top .diff{
+  background-color: #35e01f;
+  border-radius: 50%;
+}
+
+.mydonation-end{
+  position: relative;
+}
+
+.mydonation-end h3{
+  text-align: left;
+}
+
+.mydonation-end .great{
+  position: relative;
+  margin: 10vh 0;
+  height: 65vh;
+}
+
+.mydonation-end .great > div{
+  padding: 30px;
+  width: 10%;
+}
+
+.mydonation-end .menu{
+  position: absolute;
+  /*transform: translate(-50% ,-50%);*/
+}
+
 
 
 
