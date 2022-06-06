@@ -1,9 +1,15 @@
 import {useState} from "react"
 import Menu from "./Menu"
-import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft,SmileySad} from "phosphor-react"
+import {UsersThree,DotsThreeVertical,CaretRight,CaretLeft,SmileySad,BookmarkSimple} from "phosphor-react"
 
 
 function MyDonation(){
+	const [make,setMake] = useState(false)
+
+	function onMake(){
+		setMake(true)
+	}
+
 	return(
 		<div>
 			{
@@ -70,18 +76,84 @@ function MyDonation(){
 							<button>31</button>
 						</div>
 					</div>
-					<div className="mydonation-end">
-						<h3>My Donation (0)</h3>
-						<div className="great">
-							<div>
-								<SmileySad size={30} color="#ffffff" weight="fill" />
+					
+					{
+						make ?
+						<div>
+							<div className="urgent-top">
+								<h3>Donation(7)</h3>
+								<h5>See all</h5>
 							</div>
-							<h2>Great!</h2>
-							<p>You have not made a donation</p>
-							<button className="nxt">Make a Donation Now</button>
+							<div className="mydonation-donation">
+								<div className="search-result">
+									<div className="search-img4">
+										<div className="urgent-mark">
+											<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+										</div>
+									</div>
+									<div className="search-detail">
+										<div className="search-note">
+											<h3>Help Victims of the Impact of Volcano</h3>
+											<div className="search-fund">
+												<span>$2,277</span>
+												<p>fund raised from $6,310</p>
+											</div>
+										</div>
+										<div className="search-bar-min">
+											<div className="urgent-bar"></div>
+										</div>
+										<div className="urgent-end">
+											<p><span>938</span> Donators</p>
+											<p><span>26</span> days left</p>
+										</div>
+									</div>
+								</div>
+								<div className="mydonation-donation-end">
+									<h4>You have Donated<span>$22</span></h4>
+									<button>Donate Again</button>
+								</div>
+							</div>
+							<div className="mydonation-donation">
+								<div className="search-result">
+									<div className="search-img5">
+										<div className="urgent-mark">
+											<BookmarkSimple size={20} color="#fafafa" weight="duotone" />
+										</div>
+									</div>
+									<div className="search-detail">
+										<div className="search-note">
+											<h3>Help Victims of Flash Flood In Asia</h3>
+											<div className="search-fund">
+												<span>$8,775 </span>
+												<p>fund raised from $10,540</p>
+											</div>
+										</div>
+										<div className="urgent-bar"></div>
+										<div className="urgent-end">
+											<p><span>4,471</span> Donators</p>
+											<p><span>9</span> days left</p>
+										</div>
+									</div>
+								</div>
+								<div className="mydonation-donation-end">
+									<h4>You have Donated<span>$22</span></h4>
+									<button>Donate Again</button>
+								</div>
+							</div>
+						</div> :
+						<div className="mydonation-end">
+							<h3>My Donation (0)</h3>
+							<div className="great">
+								<div>
+									<SmileySad size={30} color="#ffffff" weight="fill" />
+								</div>
+								<h2>Great!</h2>
+								<p>You have not made a donation</p>
+								<button className="nxt" onClick={onMake}>Make a Donation Now</button>
+							</div>
+							<Menu/>
 						</div>
-						<Menu/>
-					</div>
+					}
 
 				</div>
 			}
