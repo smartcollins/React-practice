@@ -1,12 +1,16 @@
 import {useState} from "react";
 import Interest from "./Interest";
 import Home from "./Home";
+import Payment from "./Payment"
+import Donate from "./Donate"
 import {ArrowLeft,Circle,CheckCircle} from "phosphor-react";
 
-function Pin(){
+function Pin(props){
 	const [create,setCreate] = useState(false)
 	const [home,setHome] = useState(false)
 	const [back,setBack] = useState(false)
+	const [pin,setPin] = useState(false)
+	const [success,setSuccess] = useState(false)
 
 	function onCreate(){
 		setCreate(true)
@@ -20,12 +24,36 @@ function Pin(){
 		setBack(true)
 	}
 
+	function onContinue(){
+		setPin(true)
+	}
+
+	function onSuccess(){
+		setSuccess(true)
+	}
+
 
 	return(
 		<div>
 			{	
 				back ?
 				<Interest/> :
+				success ?
+				<Donate/> :
+				pin ?
+				<div>
+					<div className="success">
+						<Payment/>
+					</div>
+					<div className="great">
+						<div>
+							<CheckCircle size={30} color="#ffffff" weight="fill" />
+						</div>
+						<h2>Succesful!</h2>
+						<p>Thank you for Making a Donation </p>
+						<button onClick={onSuccess} className="nxt">Ok</button>
+					</div>
+				</div> :
 				home ? 
 					<Home/> :
 				create ? 
@@ -45,11 +73,15 @@ function Pin(){
 					<div>
 						<div className="back">
 							<ArrowLeft size={32} color="#2fe22c" weight="duotone" onClick={onBack}/>
-							<h2>Create Your Pin</h2>
+							<h2>{props.inpayment?"Enter":"Create"} Your Pin</h2>
 						</div>
-						<p>Please remember this PIN because it will be used when you want to to up, withdraw, or donate.</p>
+						{props.inpayment ? " " : <p>Please remember this PIN because it will be used when you want to to up, withdraw, or donate.</p>}
 						<div className="create">
-							<h2>Create PIN</h2>
+							{
+								props.inpayment ?
+								<h3>Please Enter Your Pin</h3> :
+								<h2>Create Pin</h2>
+							}
 							<Circle size={16} color="#35e01f" weight="fill" />
 							<Circle size={16} color="#35e01f" weight="fill" />
 							<Circle size={16} color="#35e01f" weight="fill" />
@@ -57,7 +89,11 @@ function Pin(){
 							<Circle size={16} color="#E6E6E6" weight="fill" />
 							<Circle size={16} color="#E6E6E6" weight="fill" />
 						</div>
-						<button onClick={onCreate} className="nxt">Create PIN</button>
+						{
+							props.inpayment ?
+							<button onClick={onContinue} className="nxt">Continue</button> :
+							<button onClick={onCreate} className="nxt">Create PIN</button>
+						}
 					</div>
 			}
 		</div>

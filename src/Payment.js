@@ -22,7 +22,9 @@ function Payment(){
 				back ?
 				<Donate/> :
 				nxt ?
-				<Pin/> :
+				<Pin
+					inpayment="true"
+				/> :
 				<div>
 					<div className="bookmark-top">
 						<div className="back">
