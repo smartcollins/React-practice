@@ -8,6 +8,8 @@ function Payment(){
 
 	const [nxt,setNxt] = useState(false)
 
+	const [method,setMethod] = useState(false)
+
 	function onBack(){
 		setBack(true)
 	}
@@ -16,31 +18,41 @@ function Payment(){
 		setNxt(true)
 	}
 
+	function onMethod(){
+		setMethod(true)
+	}
+
+	const style={
+		border: "2px solid #35e01f"
+	}
+
 	return(
 		<div>
 			{
 				back ?
 				<Donate/> :
 				nxt ?
-				<Pin
-					inpayment={true}
-				/> :
-				<div>
+				<div className="payment-mthd">
+					<Pin
+						inpayment={true}
+					/> 
+				</div>:
+				<div className="payment-card">
 					<div className="bookmark-top">
 						<div className="back">
 							<ArrowLeft size={30} color="#35e01f" onClick={onBack}/>
-							<h1>Donate</h1>
+							<h1>Payment</h1>
 						</div>
 						<button className="dot3">
 							<QrCode size={30} color="#35e01f" />
 						</button>
 					</div>
 					<div className="coming-top">
-						<h3>Fundraising (4,365)</h3>
-						<h5>See all</h5>
+						<h3>Select Payment Method</h3>
+						<h5>Add Card</h5>
 					</div>
 					<div className="payment-btn">
-						<div className="home-mid">
+						<div className="home-mid" onClick={onMethod} style={style}>
 							<div className="wallet">
 								<button>
 									<Wallet size={20} color="#35e01f" weight="duotone" />
@@ -67,7 +79,7 @@ function Payment(){
 								<button>
 									<CurrencyBtc size={20} color="#35e01f" />
 								</button>
-								<p>My Bitcon balance($349.022)</p>
+								<p>My Bitcoin balance($349.022)</p>
 							</div>
 							<input id="donate" type="radio"/>
 						</div>
