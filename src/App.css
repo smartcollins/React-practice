@@ -475,9 +475,15 @@
   filter: grayscale(10%) blur(1px) brightness(100%);
 }
 
-.home{
-  background-color: red;
+.Home{
+  /*background-color: red;*/
+  position: relative;
+  padding-bottom: 10vh;
 }
+
+/*.home{
+  background-color: red;
+}*/
 
 .home-top{
   display: flex;
@@ -854,12 +860,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: fixed;
+  position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, -10%);
-  /*transform: translate(-50% ,15%);
-  background-color: gold;*/
+  transform: translate(-50%,50%);
+  width: 100%;
 }
 
 .menu *{

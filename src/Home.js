@@ -33,6 +33,8 @@ function Home(){
 		setSearch(true)
 	}
 
+	
+
 	return(
 		<div>	
 			{	logo ? 
@@ -43,7 +45,7 @@ function Home(){
 					<Notification/> :
 				mark ?
 					<Bookmark/> :
-				<div>
+				<div className="Home">
 					<div className="home-top">
 						<div className="home-top1">
 							<UsersThree size={40} color="#35e01f" weight="duotone" onClick={onLogo}/>
@@ -89,7 +91,7 @@ function Home(){
 					<Coming/>
 					<Watch/>
 					<Prayer/>
-					
+					<Menu/>
 				</div>
 			}
 		</div>
