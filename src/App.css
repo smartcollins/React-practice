@@ -1935,6 +1935,48 @@
   margin-left: 5px;
 }
 
+.pending .mydonation-donation, .pending .search-result{
+  border-radius: 20px;
+}
+
+
+.pending .search-result{
+  height: 30vh;
+}
+.pending .search-img{
+  height: 100%;
+}
+
+.review{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.review span{
+  color: #35e01f;
+}
+
+.review-end{
+  color: #35e01f;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
