@@ -27,18 +27,18 @@ function Donation(){
 				<div className="donation">
 					<div className="donation-img">
 						<div className="donation-top">
-							<ArrowLeft size={30} color="#35e01f" weight="duotone" onClick={setBack}/>
+							<ArrowLeft size={30} color="#1EBA60" weight="duotone" onClick={setBack}/>
 							<div className="donation-top-btn">
 								<button onClick={onShare}>
-									<ShareNetwork size={30} color="#35e01f" weight="light"/>
+									<ShareNetwork size={30} color="#1EBA60" weight="light"/>
 									</button>
 								<button>
-									<BookmarkSimple size={30} color="#35e01f" weight="light"/>
+									<BookmarkSimple size={30} color="#1EBA60" weight="light"/>
 								</button>
 							</div>
 						</div>
 						<div className="donation-circle">
-							<Circle size={15} color="#35e01f" weight="fill"/>
+							<Circle size={15} color="#1EBA60" weight="fill"/>
 							<Circle size={15} color="#FaFaFa" weight="duotone"/>
 							<Circle size={15} color="#FaFaFa" weight="duotone"/>
 							<Circle size={15} color="#FaFaFa" weight="duotone"/>
@@ -65,7 +65,7 @@ function Donation(){
 								<div className="donators"></div>
 								<div className="donators"></div>
 								<p>3,438 donators</p>
-								<ArrowRight size={20} color="#35e01f" weight="duotone"/>
+								<ArrowRight size={20} color="#1EBA60" weight="duotone"/>
 							</div>
 						</div>
 						<button className="nxt">Donate Now</button>

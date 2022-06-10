@@ -23,7 +23,7 @@ function Remove(){
 					<div>
 						<div className="bookmark-img">
 							<div className="bookmark-mark">
-								<BookmarkSimple size={20} color="#35e01f" weight="fill" />
+								<BookmarkSimple size={20} color="#1EBA60" weight="fill" />
 							</div>
 						</div>
 						<div>

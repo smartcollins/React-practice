@@ -17,20 +17,20 @@ function MyFundraising(){
 
 	const style={
 		color: "white",
-		// backgroundColor: "#35e01f"
+		// backgroundColor: "#1EBA60"
 		color: "white",
 		border: "1px solid transparent",
 		// borderRadius: "15px",
 		// width: "50%",
 		// margin: "0 5px",
 		// padding: "5px",
-		backgroundColor: "#35e01f",
+		backgroundColor: "#1EBA60",
 	}
 
 	const style2={
 		backgroundColor: "transparent",
-		color: "#35e01f",
-		border: "1px solid #35e01f",
+		color: "#1EBA60",
+		border: "1px solid #1EBA60",
 	}
 	
 
@@ -42,11 +42,11 @@ function MyFundraising(){
 				<div>
 					<div className="bookmark-top">
 						<div className="back">
-							<UsersThree size={30} color="#35e01f"/>
+							<UsersThree size={30} color="#1EBA60"/>
 							<h1>My Fundraising</h1>
 						</div>
 						<button className="dot3">
-							<ArchiveBox size={30} color="#35e01f" weight="duotone" />
+							<ArchiveBox size={30} color="#1EBA60" weight="duotone" />
 						</button>
 					</div>
 					<div className="myfund-top">
@@ -87,13 +87,13 @@ function MyFundraising(){
 								</div>
 							</div>
 							<div className="plus">
-								<PlusCircle size={70} color="#35e01f" weight="fill" />
+								<PlusCircle size={70} color="#1EBA60" weight="fill" />
 							</div>
 							<Menu/>
 						</div>:
 						<div>
 							<div className="plus">
-								<PlusCircle size={70} color="#35e01f" weight="fill" />
+								<PlusCircle size={70} color="#1EBA60" weight="fill" />
 							</div>
 							<div className="mydonation-donation">
 								<div className="search-result">
@@ -120,11 +120,11 @@ function MyFundraising(){
 								<div className="mydonation-donation-end">
 									<div className="edit-share">
 										<div>
-											<PencilSimple size={20} color="#35e01f" weight="fill" />
+											<PencilSimple size={20} color="#1EBA60" weight="fill" />
 											<p>Edit</p>
 										</div>
 										<div>
-											<ShareNetwork size={20} color="#35e01f" weight="fill" />
+											<ShareNetwork size={20} color="#1EBA60" weight="fill" />
 											<p>Share</p>
 										</div>
 									</div>
@@ -158,11 +158,11 @@ function MyFundraising(){
 								<div className="mydonation-donation-end">
 									<div className="edit-share">
 										<div>
-											<PencilSimple size={20} color="#35e01f" weight="fill" />
+											<PencilSimple size={20} color="#1EBA60" weight="fill" />
 											<p>Edit</p>
 										</div>
 										<div>
-											<ShareNetwork size={20} color="#35e01f" weight="fill" />
+											<ShareNetwork size={20} color="#1EBA60" weight="fill" />
 											<p>Share</p>
 										</div>
 									</div>
@@ -194,11 +194,11 @@ function MyFundraising(){
 								<div className="mydonation-donation-end">
 									<div className="edit-share">
 										<div>
-											<PencilSimple size={20} color="#35e01f" weight="fill" />
+											<PencilSimple size={20} color="#1EBA60" weight="fill" />
 											<p>Edit</p>
 										</div>
 										<div>
-											<ShareNetwork size={20} color="#35e01f" weight="fill" />
+											<ShareNetwork size={20} color="#1EBA60" weight="fill" />
 											<p>Share</p>
 										</div>
 									</div>

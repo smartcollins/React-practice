@@ -24,7 +24,7 @@ function Watch(){
 					<div className="watch-video">
 						<div className="watch1">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Sarah's Surgrey Was Successful</p>
@@ -32,7 +32,7 @@ function Watch(){
 						</div>
 						<div className="watch2">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Siamese Twins Surgrey Was Successful</p>

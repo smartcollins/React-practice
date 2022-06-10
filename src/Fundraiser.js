@@ -12,7 +12,7 @@ function Fundraiser(){
 	}
 
 	const style={
-		color: read ? "#35e01f":"red"
+		color: read ? "#1EBA60":"red"
 	}
 
 	function onView(){
@@ -31,13 +31,13 @@ function Fundraiser(){
 							<div className="fund-main">
 								<div className="fund-main-mid">
 									<button>
-										<HouseLine size={20} color="#35e01f" weight="fill" />
+										<HouseLine size={20} color="#1EBA60" weight="fill" />
 									</button>
 									<div>
 										<h3>Healthy Home</h3>
 										<div className="fund-main-end">
 											<p>Verified</p>
-											<CircleWavyCheck size={15} color="#35e01f" weight="fill" />
+											<CircleWavyCheck size={15} color="#1EBA60" weight="fill" />
 										</div>
 									</div>
 								</div>
@@ -49,25 +49,25 @@ function Fundraiser(){
 							<div className="fund-main-last">
 								<div className="fund-main-mid">
 									<button>
-										<User size={20} color="#35e01f" weight="fill" />
+										<User size={20} color="#1EBA60" weight="fill" />
 									</button>
 									<div>
 										<h3>Alice Wilson</h3>
 										<div className="fund-main-end">
 											<p>Identity according to medical documents</p>
-											<CircleWavyCheck size={15} color="#35e01f" weight="fill" />
+											<CircleWavyCheck size={15} color="#1EBA60" weight="fill" />
 										</div>
 									</div>
 								</div>
 								<div className="fund-main-mid">
 									<button>
-										<FirstAidKit size={20} color="#35e01f" weight="fill" />
+										<FirstAidKit size={20} color="#1EBA60" weight="fill" />
 									</button>
 									<div>
 										<h3>Post Craniotomy EDH + ICH</h3>
 										<div className="fund-main-end">
 											<p>Accompanied by medical documents</p>
-											<CircleWavyCheck size={15} color="#35e01f" weight="fill" />
+											<CircleWavyCheck size={15} color="#1EBA60" weight="fill" />
 										</div>
 									</div>
 								</div>

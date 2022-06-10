@@ -35,11 +35,11 @@ function Bookmark(){
 				<div className="bookmark" style={style}>
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h1>Bookmark</h1>
 						</div>
 						<button className="dot3">
-							<DotsThreeVertical size={30} color="#35e01f" />
+							<DotsThreeVertical size={30} color="#1EBA60" />
 						</button>
 					</div>
 					<div className="bookmark-btn">
@@ -56,7 +56,7 @@ function Bookmark(){
 								<div>
 									<div className="bookmark-img">
 										<div className="bookmark-mark" onClick={onBookMark}>
-											<BookmarkSimple size={20} color="#35e01f" weight="fill" />
+											<BookmarkSimple size={20} color="#1EBA60" weight="fill" />
 										</div>
 									</div>
 									<div>

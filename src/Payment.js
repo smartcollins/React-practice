@@ -23,7 +23,7 @@ function Payment(){
 	}
 
 	const style={
-		border: "2px solid #35e01f"
+		border: "2px solid #1EBA60"
 	}
 
 	return(
@@ -40,11 +40,11 @@ function Payment(){
 				<div className="payment-card">
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack}/>
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
 							<h1>Payment</h1>
 						</div>
 						<button className="dot3">
-							<QrCode size={30} color="#35e01f" />
+							<QrCode size={30} color="#1EBA60" />
 						</button>
 					</div>
 					<div className="coming-top">
@@ -55,7 +55,7 @@ function Payment(){
 						<div className="home-mid" onClick={onMethod} style={style}>
 							<div className="wallet">
 								<button>
-									<Wallet size={20} color="#35e01f" weight="duotone" />
+									<Wallet size={20} color="#1EBA60" weight="duotone" />
 								</button>
 								<p>My wallet balance($349,000)</p>
 							</div>
@@ -66,7 +66,7 @@ function Payment(){
 						<div className="home-mid">
 							<div className="wallet">
 								<button>
-									<CurrencyEth size={20} color="#35e01f" />
+									<CurrencyEth size={20} color="#1EBA60" />
 								</button>
 								<p>My Etherum balance($119.00)</p>
 							</div>
@@ -77,7 +77,7 @@ function Payment(){
 						<div className="home-mid">
 							<div className="wallet">
 								<button>
-									<CurrencyBtc size={20} color="#35e01f" />
+									<CurrencyBtc size={20} color="#1EBA60" />
 								</button>
 								<p>My Bitcoin balance($349.022)</p>
 							</div>
@@ -86,7 +86,7 @@ function Payment(){
 						<div className="home-mid">
 							<div className="wallet">
 								<button>
-									<CreditCard size={20} color="#35e01f" weight="duotone" />
+									<CreditCard size={20} color="#1EBA60" weight="duotone" />
 								</button>
 								<p>My Venmo balance($439.000)</p>
 							</div>
@@ -95,7 +95,7 @@ function Payment(){
 						<div className="home-mid">
 							<div className="wallet">
 								<button>
-									<AppleLogo size={20} color="#35e01f" weight="duotone"/>
+									<AppleLogo size={20} color="#1EBA60" weight="duotone"/>
 								</button>
 								<p>My iTunes balance($29,000)</p>
 							</div>

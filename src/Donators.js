@@ -25,11 +25,11 @@ function Donators(){
 				<div className="donators-main">
 					<div className="notification-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h1>3,438 Donators</h1>
 						</div>
 						<button className="dot3">
-							<MagnifyingGlass size={20} color="#35e01f" />
+							<MagnifyingGlass size={20} color="#1EBA60" />
 						</button>
 					</div>
 					<div>

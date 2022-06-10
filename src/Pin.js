@@ -82,10 +82,10 @@ function Pin(props){
 								<h3>Please Enter Your Pin</h3> :
 								<h2>Create Pin</h2>
 							}
-							<Circle size={16} color="#35e01f" weight="fill" />
-							<Circle size={16} color="#35e01f" weight="fill" />
-							<Circle size={16} color="#35e01f" weight="fill" />
-							<Circle size={16} color="#35e01f" weight="fill" />
+							<Circle size={16} color="#1EBA60" weight="fill" />
+							<Circle size={16} color="#1EBA60" weight="fill" />
+							<Circle size={16} color="#1EBA60" weight="fill" />
+							<Circle size={16} color="#1EBA60" weight="fill" />
 							<Circle size={16} color="#E6E6E6" weight="fill" />
 							<Circle size={16} color="#E6E6E6" weight="fill" />
 						</div>

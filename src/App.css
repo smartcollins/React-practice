@@ -58,7 +58,7 @@
 .intro h2{
   /*color: rgb(40, 250, 54);*/
   margin-top: 30px;
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .btn{
@@ -68,13 +68,13 @@
 
 .btn button{
   background-color: transparent;
-  color: #35e01f;
+  color: #1EBA60;
   padding: 10px 50px;
   border: none;
 }
 
 .btn button:hover{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   color: white;
   border-radius: 10px;
 }
@@ -89,7 +89,7 @@
 }
 
 .on{
-  background-color:#35e01f;
+  background-color:#1EBA60;
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -126,7 +126,7 @@
 }
 
 .signup-btn .sign-in{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   border-radius: 30px;
   color: white;
   padding: 10px 5px;
@@ -137,7 +137,7 @@
 }
 
 .no-acc span{
-  color:  #35e01f;
+  color:  #1EBA60;
   font-weight: bold;
   cursor: pointer;
 }
@@ -147,7 +147,7 @@
   text-align: center;
 }
 .SignUp2 h2{
-  color: #35e01f;
+  color: #1EBA60;
   margin-top: -10px;
 }
 .people2{
@@ -193,13 +193,13 @@
     padding: 10px;
     border-radius: 5px;
     color: white;
-    background-color: #35e01f;
+    background-color: #1EBA60;
     border: none;   
     cursor: pointer; 
 }
 
 .form--input:focus{
-    outline: 2px solid #35e01f;
+    outline: 2px solid #1EBA60;
 }
 
 .form--marketing {
@@ -219,7 +219,7 @@
 }
 
 .forget{
-    color: #35e01f; 
+    color: #1EBA60; 
     cursor: pointer;
 }
 
@@ -283,7 +283,7 @@
   padding: 10px;
   border-radius: 25px;
   color: white;
-  background-color: #35e01f;
+  background-color: #1EBA60;
   width: 100%;
 }
 
@@ -376,7 +376,7 @@
 }
 
 .user-pen{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   position: absolute;
   right: 10px;
   padding: 5px;
@@ -388,7 +388,7 @@
 }
 
 .user-input{
-  border: 1px solid #35e01f;
+  border: 1px solid #1EBA60;
   margin: 0 50px;
   display: flex;
   align-items: center;
@@ -461,7 +461,7 @@
 }
 
 .great > div{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   margin: 0 auto;
   padding: 20px;
   border-radius: 50%;
@@ -524,9 +524,9 @@
 .home-mid > button{
   color: red;
   padding: 5px 20px;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
   border-radius: 15px;
-  color: #35e01f;
+  color: #1EBA60;
   background-color: white;
 }
 
@@ -602,7 +602,7 @@
 }
 
 .urgent-top h5, .coming-top h5, .watch-top h5{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .urgent-btn{
@@ -617,7 +617,7 @@
   width: 50%;
   margin: 0 5px;
   padding: 5px;
-  background-color: #35e01f;
+  background-color: #1EBA60;
 }
 
 .urgent-btn button:not(:first-child){
@@ -625,9 +625,9 @@
   margin: 0 5px;
   width: 50%;
   background-color: white;
-  color: #35e01f;
+  color: #1EBA60;
   border-radius: 15px;
-  border: 1px solid #35e01f;
+  border: 1px solid #1EBA60;
 }
 
 .urgent-card{
@@ -662,14 +662,14 @@
   position: absolute;
   top: 10%;
   right: 5%;
-  background-color: #35e01f;
+  background-color: #1EBA60;
   padding: 5px;
   border-radius: 10px;
 }
 
 .urgent-note span, .coming-note span, .bookmark span{
   margin-left: -50px;
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 
@@ -690,7 +690,7 @@
   width: 85%;
   border-radius: 5px;
   height: 5px;
-  background: linear-gradient(90deg, #35e01f,#d6ffed);
+  background: linear-gradient(90deg, #1EBA60,#d6ffed);
 }
 
 .urgent-end, .coming-end, .bookmark-end{
@@ -702,7 +702,7 @@
 }
 
 .urgent-end span, .coming-end span, .bookmark-end span{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .coming-card, .prayer-card{
@@ -916,11 +916,11 @@
 }
 
 .notify-null-main p, .bookmark-null-main p{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .bell, .book{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   margin: 0 auto;
   padding: 20px;
   border-radius: 50%;
@@ -950,7 +950,7 @@
 }
 
 .notify-logo{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   padding: 10px;
   border-radius: 50%;
   margin-left: 10px;
@@ -973,12 +973,12 @@
 /*
 .bookmark-btn button{
   background-color: white;
-  color: #35e01f;
+  color: #1EBA60;
   width: 20%;
   margin: 0 5px;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid #35e01f;
+  border: 1px solid #1EBA60;
 }*/
 
 .bookmark-btn{
@@ -994,7 +994,7 @@
   width: 50%;
   margin: 0 5px;
   padding: 5px;
-  background-color: #35e01f;
+  background-color: #1EBA60;
 }
 
 .bookmark-btn button:not(:first-child){
@@ -1002,9 +1002,9 @@
   margin: 0 5px;
   width: 50%;
   background-color: white;
-  color: #35e01f;
+  color: #1EBA60;
   border-radius: 15px;
-  border: 1px solid #35e01f;
+  border: 1px solid #1EBA60;
 }
 
 .bookmark-card{
@@ -1040,12 +1040,12 @@
   padding: 5px 10px;
   border-radius: 20px;
   width: 40%;
-  color: #35e01f;
-  border: 1px solid #35e01f;
+  color: #1EBA60;
+  border: 1px solid #1EBA60;
 }
 
 .remove-btn button:last-child{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   padding: 5px 10px;
   border-radius: 20px;
   width: 40%;
@@ -1099,7 +1099,7 @@
   color: lightgrey;
 }
 .search-txt p:last-child{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .search-null-main{
@@ -1114,7 +1114,7 @@
 }
 
 .search-null-main h4{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .search-result{
@@ -1181,7 +1181,7 @@
 }
 
 .search-bar-min .urgent-bar{
-  background: linear-gradient(90deg, #35e01f,#d6ffed 40%);
+  background: linear-gradient(90deg, #1EBA60,#d6ffed 40%);
 }
 
 .search-note h3{
@@ -1191,7 +1191,7 @@
 }
 
 .search-note span{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .search-note p{
@@ -1250,7 +1250,7 @@
 }
 
 .watchfull .urgent-bar{
-  background: linear-gradient(90deg, #35e01f,#d6ffed 40%);
+  background: linear-gradient(90deg, #1EBA60,#d6ffed 40%);
 }
 
 
@@ -1394,7 +1394,7 @@
 }
 
 .donation-txt-top p:first-child{
-  color: #35e01f;
+  color: #1EBA60;
   margin-right: 10px;
 }
 
@@ -1415,9 +1415,9 @@
 }
 
 .donation-mid button{
-  color: #35e01f;
+  color: #1EBA60;
   border-radius: 10px;
-  border: 1px solid #35e01f;
+  border: 1px solid #1EBA60;
   background-color: transparent;
   /*padding: 0 10px;*/
   width: 25%;
@@ -1480,9 +1480,9 @@
 
 .fund-main button:last-child{
   padding: 5px 20px;
-  color: #35e01f;
+  color: #1EBA60;
   background-color: white;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
   border-radius: 20px;
 }
 
@@ -1495,9 +1495,9 @@
 .fund-usage button{
   padding: 5px 20px;
   border-radius: 20px;
-  color: #35e01f;
+  color: #1EBA60;
   background-color: transparent;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
 }
 /*
 .story-dt{
@@ -1527,10 +1527,10 @@
   height: 20vh;
   border-radius: 10px;
   background-color: transparent;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
   font-size: 20px;
   font-weight: bold;
-  color: #35e01f;
+  color: #1EBA60;
   margin-bottom: 10px;
 }
 
@@ -1546,9 +1546,9 @@
 
 .amount button{
   padding: 10px;
-  color: #35e01f;
+  color: #1EBA60;
   background-color: transparent;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
   border-radius: 20px;
 }
 
@@ -1610,7 +1610,7 @@
 }
 
 .btn1{
-  background-color: #35e01f;
+  background-color: #1EBA60;
 }
 
 .btn2{
@@ -1660,7 +1660,7 @@
 }
 
 .donator-ayms div{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   /*border: 1px solid black;*/
   padding: 5px;
   border-radius: 50%;
@@ -1728,15 +1728,15 @@
 }
 
 .profile-mid button:first-child{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   color: white;
   border: 1px solid transparent;
 }
 
 .profile-mid button:last-child{
   background-color: transparent;
-  color: #35e01f;
-  border: 1px solid #35e01f;
+  color: #1EBA60;
+  border: 1px solid #1EBA60;
 }
 
 .profile-mid-end{
@@ -1827,7 +1827,7 @@
 }
 
 .calender-top .diff{
-  background-color: #35e01f;
+  background-color: #1EBA60;
   border-radius: 50%;
 }
 
@@ -1877,14 +1877,14 @@
 }
 
 .mydonation-donation-end span{
-  color: #35e01f;
+  color: #1EBA60;
   margin-left: 5px;
 }
 
 .mydonation-donation-end button{
   padding: 5px 15px;
   background-color: transparent;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
   border-radius: 20px;
   color: #35e10f;
 }
@@ -1895,13 +1895,13 @@
   justify-content: space-between;
   /*border-width: 5px;
   border-style: none none solid none;
-  border-image: linear-gradient(45deg, #35e01f,#fafafa);
+  border-image: linear-gradient(45deg, #1EBA60,#fafafa);
   border-image-slice: 1;
   margin-bottom: 10px;*/
 }
 
 .myfund-top h3{
-  border-bottom: 4px solid #35e01f;
+  border-bottom: 4px solid #1EBA60;
   width: 50%;
   padding-bottom: 10px;
 }
@@ -1953,11 +1953,11 @@
 }
 
 .review span{
-  color: #35e01f;
+  color: #1EBA60;
 }
 
 .review-end{
-  color: #35e01f;
+  color: #1EBA60;
   font-weight: bold;
 }
 
@@ -1975,7 +1975,7 @@
 .result-btn button{
   border-radius: 10px;
   background-color: transparent;
-  border: 2px solid #35e01f;
+  border: 2px solid #1EBA60;
 }
 
 .result-btn p:first-child{

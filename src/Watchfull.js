@@ -18,7 +18,7 @@ function Watchfull(){
 				<div>
 					<div className="watchfull">
 						<div className="back">
-							<ArrowLeft size={40} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={40} color="#1EBA60" onClick={onBack} />
 						</div>
 						<div className="watchfull-note">
 							<h3>Brian Surgrey was Successful</h3>
@@ -29,13 +29,13 @@ function Watchfull(){
 								<p>03:27 / 10:38</p>
 							</div>
 							<div>
-								<ArrowCounterClockwise size={20} color="#35e01f" weight="bold" />
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
-								<ArrowClockwise size={20} color="#35e01f" weight="bold" />
+								<ArrowCounterClockwise size={20} color="#1EBA60" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
+								<ArrowClockwise size={20} color="#1EBA60" weight="bold" />
 							</div>
 							<div>
-								<SpeakerHigh size={20} color="#35e01f" weight="bold" />
-								<Gear size={20} color="#35e01f" weight="bold" />
+								<SpeakerHigh size={20} color="#1EBA60" weight="bold" />
+								<Gear size={20} color="#1EBA60" weight="bold" />
 							</div>
 						</div>
 					</div>

@@ -42,25 +42,25 @@ function Info(){
 	}
 
 	const style={
-		color: read ? "#35e01f":"red"
+		color: read ? "#1EBA60":"red"
 	}
 
 	const style2={
-		backgroundColor: about ? "#35e01f":"white",
-		color: about ? "white":"#35e01f",
-		borderColor: about ? "white":"#35e01f"
+		backgroundColor: about ? "#1EBA60":"white",
+		color: about ? "white":"#1EBA60",
+		borderColor: about ? "white":"#1EBA60"
 	}
 
 	const style3={
-		backgroundColor: fundraising ? "#35e01f":"white",
-		color: fundraising ? "white":"#35e01f",
-		borderColor: fundraising ? "white":"#35e01f"
+		backgroundColor: fundraising ? "#1EBA60":"white",
+		color: fundraising ? "white":"#1EBA60",
+		borderColor: fundraising ? "white":"#1EBA60"
 	}
 
 	const style4={
-		backgroundColor : prayer ? "#35e01f":"white",
-		color: prayer ? "white":"#35e01f",
-		borderColor: prayer ? "white":"#35e01f"
+		backgroundColor : prayer ? "#1EBA60":"white",
+		color: prayer ? "white":"#1EBA60",
+		borderColor: prayer ? "white":"#1EBA60"
 	}
 
 	return(
@@ -71,21 +71,21 @@ function Info(){
 				<div className="profile">
 					<div className="notification-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h1>Profile</h1>
 						</div>
 						<button className="dot3">
-							<DotsThreeVertical size={20} color="#35e01f" />
+							<DotsThreeVertical size={20} color="#1EBA60" />
 						</button>
 					</div>
 					<div>
 						<button className="profile-top-btn">
-							<HouseLine size={50} color="#35e01f"/>
+							<HouseLine size={50} color="#1EBA60"/>
 						</button>
 						<div className="profile-top-txt">
 							<div>
 								<h3>Healthy Home</h3>
-							<CircleWavyCheck size={20} color="#35e01f"/>
+							<CircleWavyCheck size={20} color="#1EBA60"/>
 							</div>
 						</div>
 					</div>
@@ -109,7 +109,7 @@ function Info(){
 							<p>Follow</p>
 						</button>
 						<button>
-							<ChatText size={20} color="#35e01f" />
+							<ChatText size={20} color="#1EBA60" />
 							<p>Messages</p>
 						</button>
 					</div>

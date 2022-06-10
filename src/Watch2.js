@@ -25,17 +25,17 @@ function Watch2(){
 				<div className="watch2-main">
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h3>Watch the impact of</h3>
 						</div>
 						<button className="dot3">
-							<DotsThreeVertical size={30} color="#35e01f" />
+							<DotsThreeVertical size={30} color="#1EBA60" />
 						</button>
 					</div>
 					<div className="watch-main-video">
 						<div className="watch-main">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" onClick={onPlay} />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" onClick={onPlay} />
 							</div>
 							<div className="watch-txt">
 								<p>Help improve Nutrition in Africa</p>
@@ -43,7 +43,7 @@ function Watch2(){
 						</div>
 						<div className="watch-main2">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Siamese Twins Surgrey Was Successful</p>
@@ -51,7 +51,7 @@ function Watch2(){
 						</div>
 						<div className="watch-main3">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Help Combat Poverty in Africa</p>
@@ -59,7 +59,7 @@ function Watch2(){
 						</div>
 						<div className="watch-main">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Help Victims of Flash Flood in Sudan</p>
@@ -67,7 +67,7 @@ function Watch2(){
 						</div>
 						<div className="watch-main">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Help Homeless People in Durban</p>
@@ -75,7 +75,7 @@ function Watch2(){
 						</div>
 						<div className="watch-main6">
 							<div className="watch-play">
-								<PlayCircle size={30} color="#35e01f" weight="bold" />
+								<PlayCircle size={30} color="#1EBA60" weight="bold" />
 							</div>
 							<div className="watch-txt">
 								<p>Fight Poilio in Europe</p>

@@ -24,7 +24,7 @@ function Interest(){
 	}
 
 	const style={
-		backgroundColor: interest ? "#35e01f" : "blue"
+		backgroundColor: interest ? "#1EBA60" : "blue"
 	}
 
 	return(
@@ -41,51 +41,51 @@ function Interest(){
 					<p>Choose your interest to donate. Dont worry you can always change it later</p>
 					<div className="interests">
 						<button onClick={onInterest} style={style}>
-							<GraduationCap size={28} color="#35e01f" />
+							<GraduationCap size={28} color="#1EBA60" />
 							<p>Education</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<YinYang size={28} color="#35e01f" weight="duotone" />							
+							<YinYang size={28} color="#1EBA60" weight="duotone" />							
 							<p>Environment</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<UsersThree size={28} color="#35e01f" />
+							<UsersThree size={28} color="#1EBA60" />
 							<p>Social</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Heartbeat size={28} color="#35e01f" weight="thin" />
+							<Heartbeat size={28} color="#1EBA60" weight="thin" />
 							<p>Sick Child</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<FirstAidKit size={28} color="#35e01f" />
+							<FirstAidKit size={28} color="#1EBA60" />
 							<p>Medical</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Buildings size={28} color="#35e01f" />
+							<Buildings size={28} color="#1EBA60" />
 							<p>Infrastructure</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Palette size={28} color="#35e01f" />
+							<Palette size={28} color="#1EBA60" />
 							<p>Art</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<GlobeHemisphereEast size={28} color="#35e01f" />
+							<GlobeHemisphereEast size={28} color="#1EBA60" />
 							<p>Disaster</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<House size={28} color="#35e01f" weight="duotone" />
+							<House size={28} color="#1EBA60" weight="duotone" />
 							<p>Orphanage</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Wheelchair size={28} color="#35e01f" weight="duotone" />
+							<Wheelchair size={28} color="#1EBA60" weight="duotone" />
 							<p>Diasable</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Users size={28} color="#35e01f" weight="light" />
+							<Users size={28} color="#1EBA60" weight="light" />
 							<p>Humanity</p>
 						</button>
 						<button onClick={onInterest} style={style}>
-							<Gift size={28} color="#35e01f" weight="duotone" />
+							<Gift size={28} color="#1EBA60" weight="duotone" />
 							<p>Others</p>
 						</button>
 					</div>

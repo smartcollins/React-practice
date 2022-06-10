@@ -38,11 +38,11 @@ function Donate(){
 				<div className="donate-main">
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack}/>
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
 							<h1>Donate</h1>
 						</div>
 						<button className="dot3">
-							<DotsThreeVertical size={30} color="#35e01f" onClick={onDot} />
+							<DotsThreeVertical size={30} color="#1EBA60" onClick={onDot} />
 						</button>
 					</div>
 					<div>

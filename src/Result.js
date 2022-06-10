@@ -4,9 +4,14 @@ import{ArrowLeft,DotsThreeVertical,BookmarkSimple} from "phosphor-react"
 
 function Result(){
 	const [back,setBack] = useState(false)
+	const [dot,setDot] = useState(false)
 
 	function onBack(){
 		setBack(true)
+	}
+
+	function onDot(){
+		setDot(true)
 	}
 
 	return(
@@ -17,11 +22,11 @@ function Result(){
 				<div className="result">
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h3>See Result</h3>
 						</div>
-						<button className="dot3">
-							<DotsThreeVertical size={30} color="#35e01f" />
+						<button className="dot3" onClick={onDot}>
+							<DotsThreeVertical size={30} color="#1EBA60" />
 						</button>
 					</div>
 					<div className="search-result">

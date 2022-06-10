@@ -26,11 +26,11 @@ function MyDonation(){
 				<div>
 					<div className="bookmark-top">
 						<div className="back">
-							<UsersThree size={30} color="#35e01f"/>
+							<UsersThree size={30} color="#1EBA60"/>
 							<h1>My Donation</h1>
 						</div>
 						<button className="dot3">
-							<DotsThreeVertical size={30} color="#35e01f"/>
+							<DotsThreeVertical size={30} color="#1EBA60"/>
 						</button>
 					</div>
 					<div className="calender">
@@ -38,7 +38,7 @@ function MyDonation(){
 							<h3>December 2023</h3>
 							<div>
 								<CaretLeft size={20} color="#121212"/>
-								<CaretRight size={20} color="#35e01f" weight="bold" />
+								<CaretRight size={20} color="#1EBA60" weight="bold" />
 							</div>
 						</div>
 						<div className="calender-top">
@@ -158,11 +158,11 @@ function MyDonation(){
 								<div>
 									<div className="bookmark-top">
 										<div className="back">
-											<ArrowLeft size={30} color="#35e01f" onClick={onBack}/>
+											<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
 											<h1>My Donation (7)</h1>
 										</div>
 										<button className="dot3">
-											<DotsThreeVertical size={30} color="#35e01f"/>
+											<DotsThreeVertical size={30} color="#1EBA60"/>
 										</button>
 									</div>
 									<div className="mydonation-donation">

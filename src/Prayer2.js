@@ -27,15 +27,15 @@ function Prayer2(){
 				<div className="prayer2">
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h3>Prayer from Good People</h3>
 						</div>
 						<div className="prayer2-top">
 							<button className="dot3">
-								<MagnifyingGlass size={20} color="#35e01f" />
+								<MagnifyingGlass size={20} color="#1EBA60" />
 							</button>
 							<button className="dot3">
-								<DotsThreeVertical size={20} color="#35e01f" />
+								<DotsThreeVertical size={20} color="#1EBA60" />
 							</button>
 						</div>
 					</div>

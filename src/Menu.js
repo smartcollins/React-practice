@@ -29,7 +29,7 @@ function Menu(){
 	}
 
 	const style={
-		backgroundColor: "#35e01f"
+		backgroundColor: "#1EBA60"
 	}
 
 	return(
@@ -45,10 +45,10 @@ function Menu(){
 				<Userprofile/> :
 				<div className="menu">
 					<House style={style} size={30} color="#ffffff" weight="fill" />
-					<Notepad style={calender?style : null} size={30} color="#35e01f" onClick={onCalender} />
-					<ListDashes style={fund?style : null} size={30} color="#35e01f" weight="bold" onClick={onFund} />
-					<ChatText style={inbox?style : null} size={30} color="#35e01f" onClick={onInbox} />
-					<User style={profile?style : null} size={30} color="#35e01f" onClick={onProfile} />
+					<Notepad style={calender?style : null} size={30} color="#1EBA60" onClick={onCalender} />
+					<ListDashes style={fund?style : null} size={30} color="#1EBA60" weight="bold" onClick={onFund} />
+					<ChatText style={inbox?style : null} size={30} color="#1EBA60" onClick={onInbox} />
+					<User style={profile?style : null} size={30} color="#1EBA60" onClick={onProfile} />
 				</div>
 			}
 		</div>

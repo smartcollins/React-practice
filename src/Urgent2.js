@@ -18,11 +18,11 @@ function Urgent2(){
 				<div className="urgent2">
 					<div className="bookmark-top">
 						<div className="back">
-							<ArrowLeft size={30} color="#35e01f" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h3>Urgent Fundraising</h3>
 						</div>
 						<button className="dot3">
-							<DotsThreeVertical size={30} color="#35e01f" />
+							<DotsThreeVertical size={30} color="#1EBA60" />
 						</button>
 					</div>
 					<div className="search-max">
@@ -31,7 +31,7 @@ function Urgent2(){
 							<MagnifyingGlass size={20} color="#D3D3D3" weight="light" />
 						</div>
 						<button className="dot3">
-							<FunnelSimple size={20} color="#35e01f" weight="fill" />
+							<FunnelSimple size={20} color="#1EBA60" weight="fill" />
 						</button>
 					</div>
 					<div className="urgent-btn">
