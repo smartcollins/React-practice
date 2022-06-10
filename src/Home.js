@@ -48,18 +48,18 @@ function Home(){
 				<div className="Home">
 					<div className="home-top">
 						<div className="home-top1">
-							<UsersThree size={40} color="#35e01f" weight="duotone" onClick={onLogo}/>
+							<UsersThree size={40} color="#1EBA60" weight="duotone" onClick={onLogo}/>
 							<h1>Wecare</h1>
 						</div>
 						<div className="home-top2">
 							<button onClick={onSearch}>
-								<MagnifyingGlass size={16} color="#35e01f" weight="bold" />
+								<MagnifyingGlass size={16} color="#1EBA60" weight="bold" />
 							</button>
 							<button onClick={onNotify}>
-								<Bell size={16} color="#35e01f" weight="fill" />
+								<Bell size={16} color="#1EBA60" weight="fill" />
 							</button>
 							<button onClick={onMark}>
-								<BookmarkSimple size={16} color="#35e01f" weight="fill" />
+								<BookmarkSimple size={16} color="#1EBA60" weight="fill" />
 							</button>
 						</div>
 					</div>
@@ -67,7 +67,7 @@ function Home(){
 					<div className="home-mid">
 						<div className="wallet">
 							<button>
-								<Wallet size={30} color="#35e01f" weight="duotone" />
+								<Wallet size={30} color="#1EBA60" weight="duotone" />
 							</button>
 							<div>
 								<h3>$349</h3>
@@ -80,7 +80,7 @@ function Home(){
 					<div className="help">
 						<p>Help Alice Brain Surgery</p>
 						<div>
-							<Circle size={10} color="#35e01f" weight="fill" />
+							<Circle size={10} color="#1EBA60" weight="fill" />
 							<Circle size={10} color="#ffffff" weight="fill" />
 							<Circle size={10} color="#ffffff" weight="fill" />
 							<Circle size={10} color="#ffffff" weight="fill" />

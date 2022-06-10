@@ -968,7 +968,8 @@
   background-color: #D8FDE1;
   border: transparent;
   border-radius: 5px;
-  padding: 3px;
+  /*padding: 3px;*/
+  padding: 5px;
 }
 /*
 .bookmark-btn button{
@@ -1939,7 +1940,6 @@
   border-radius: 20px;
 }
 
-
 .pending .search-result{
   height: 30vh;
 }
@@ -1983,11 +1983,54 @@
   font-size: 15px;
 }
 
+.edit .dot3{
+  background-color: #f8e2eb;
+  padding: 5px;
+}
 
+.edit .back h3{
+  width: 100%;
+}
 
+.edit-img{
+  background-image: url(./image/flood1.jpg);
+  border-radius: 20px;
+  height: 40vh;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+}
 
+.edit-grid{
+  display: grid;
+  grid-template: auto/auto auto auto auto;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
 
+.edit-grid *{
+  border-radius: 20px;
+  height: 15vh;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+}
 
+.edit-img2{
+  background-image: url(./image/orphan.jpg);
+}
+
+.edit-img3{
+  background-image: url(./image/patient.jpg);
+}
+
+.edit-img4{
+  background-image: url(./image/quake.jpg);
+}
+
+.edit-img5{
+  background-image: url(./image/poor.jpg);
+}
 
 
 

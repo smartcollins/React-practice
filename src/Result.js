@@ -1,4 +1,5 @@
 import {useState} from "react"
+import Edit from "./Edit"
 import MyFundraising from "./MyFundraising"
 import{ArrowLeft,DotsThreeVertical,BookmarkSimple} from "phosphor-react"
 
@@ -19,6 +20,8 @@ function Result(){
 			{
 				back ?
 				<MyFundraising/>:
+				dot ?
+				<Edit/> :
 				<div className="result">
 					<div className="bookmark-top">
 						<div className="back">
