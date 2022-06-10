@@ -37,7 +37,7 @@ function Search(){
 						<FunnelSimple size={20} color="#35e01f" weight="fill" />
 					</button>
 				</div>
-				<div className="bookmark-btn">
+				<div className="urgent-btn">
 					<button>All</button>
 					<button>Art</button>
 					<button>Music</button>

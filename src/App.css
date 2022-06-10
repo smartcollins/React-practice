@@ -616,10 +616,12 @@
   border-radius: 15px;
   width: 50%;
   margin: 0 5px;
+  padding: 5px;
   background-color: #35e01f;
 }
 
 .urgent-btn button:not(:first-child){
+  padding: 5px;
   margin: 0 5px;
   width: 50%;
   background-color: white;
@@ -968,20 +970,41 @@
   border-radius: 5px;
   padding: 3px;
 }
-
+/*
 .bookmark-btn button{
   background-color: white;
   color: #35e01f;
   width: 20%;
   margin: 0 5px;
+  padding: 5px;
   border-radius: 10px;
   border: 1px solid #35e01f;
+}*/
+
+.bookmark-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .bookmark-btn button:first-child{
   color: white;
-  background-color: #35e01f;
   border: 1px solid transparent;
+  border-radius: 15px;
+  width: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: #35e01f;
+}
+
+.bookmark-btn button:not(:first-child){
+  padding: 5px;
+  margin: 0 5px;
+  width: 50%;
+  background-color: white;
+  color: #35e01f;
+  border-radius: 15px;
+  border: 1px solid #35e01f;
 }
 
 .bookmark-card{
@@ -989,9 +1012,6 @@
   border-radius: 10px;
 }
 
-/*.bookmark-card:not(:first-child){
-  background-color: blue;
-}*/
 
 .remove{
   position: relative;
@@ -1840,7 +1860,7 @@
   padding: 10px;
   border-radius: 10px;
   border: 1px solid lightgrey;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 /*
 .mydonation-donation > div:last-child{
@@ -1869,9 +1889,51 @@
   color: #35e10f;
 }
 
+.myfund-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*border-width: 5px;
+  border-style: none none solid none;
+  border-image: linear-gradient(45deg, #35e01f,#fafafa);
+  border-image-slice: 1;
+  margin-bottom: 10px;*/
+}
 
+.myfund-top h3{
+  border-bottom: 4px solid #35e01f;
+  width: 50%;
+  padding-bottom: 10px;
+}
 
+.myfund-top h3:last-child{
+  border-bottom: 4px solid lightgrey;
+}
 
+.plus{
+  /*position: absolute;*/
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  z-index: 1;
+}
+
+.edit-share{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.edit-share div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 5px;
+}
+
+.edit-share div p{
+  margin-left: 5px;
+}
 
 
 
