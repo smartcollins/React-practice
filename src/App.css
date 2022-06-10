@@ -1965,6 +1965,25 @@
   width: 100%;
 }
 
+.result-btn{
+  display: grid;
+  grid-template: auto/auto auto auto;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.result-btn button{
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #35e01f;
+}
+
+.result-btn p:first-child{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
 
 
 

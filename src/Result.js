@@ -44,6 +44,38 @@ function Result(){
 							</div>
 						</div>
 					</div>
+					<div>
+						<h3>Fundraising Result</h3>
+						<div className="result-btn">
+							<button>
+								<p>$8,775</p>
+								<p>Funds gained</p>
+							</button>
+							<button>
+								<p>$1,765</p>
+								<p>Funds left</p>
+							</button>
+							<button>
+								<p>4.471</p>
+								<p>Donators</p>
+							</button>
+							<button>
+								<p>9</p>
+								<p>9 days left</p>
+							</button>
+							<button>
+								<p>82%</p>
+								<p>Funds reached</p>
+							</button>
+							<button>
+								<p>2.389</p>
+								<p>Prayers</p>
+							</button>
+						</div>
+						<div>
+							<button className="nxt">Withdraw Funds ($8,775)</button>
+						</div>
+					</div>
 				</div>
 			}
 		</div>
