@@ -876,10 +876,10 @@
   margin: 5px;
 }
 
-.menu *:first-child {
+/*.menu *:first-child {
   background-color: #0da542;
 }
-
+*/
 .notification, .bookmark{
   margin-top: -10vh;
   height: 100vh;
@@ -1961,7 +1961,9 @@
   font-weight: bold;
 }
 
-
+.result .back h3{
+  width: 100%;
+}
 
 
 

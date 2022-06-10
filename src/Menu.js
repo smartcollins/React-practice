@@ -6,6 +6,7 @@ import Userprofile from "./Userprofile"
 import {House,Notepad,ListDashes,ChatText,User} from "phosphor-react";
 
 function Menu(){
+	const [home,setHome] = useState(true)
 	const [calender,setCalender] = useState(false)
 	const [fund,setFund] = useState(false)
 	const [inbox,setInbox] = useState(false)
@@ -27,6 +28,10 @@ function Menu(){
 		setProfile(true)
 	}
 
+	const style={
+		backgroundColor: "#35e01f"
+	}
+
 	return(
 		<div>
 			{
@@ -39,11 +44,11 @@ function Menu(){
 				profile ?
 				<Userprofile/> :
 				<div className="menu">
-					<House size={30} color="#ffffff" weight="fill" />
-					<Notepad size={30} color="#35e01f" onClick={onCalender} />
-					<ListDashes size={30} color="#35e01f" weight="bold" onClick={onFund} />
-					<ChatText size={30} color="#35e01f" onClick={onInbox} />
-					<User size={30} color="#35e01f" onClick={onProfile} />
+					<House style={style} size={30} color="#ffffff" weight="fill" />
+					<Notepad style={calender?style : null} size={30} color="#35e01f" onClick={onCalender} />
+					<ListDashes style={fund?style : null} size={30} color="#35e01f" weight="bold" onClick={onFund} />
+					<ChatText style={inbox?style : null} size={30} color="#35e01f" onClick={onInbox} />
+					<User style={profile?style : null} size={30} color="#35e01f" onClick={onProfile} />
 				</div>
 			}
 		</div>
