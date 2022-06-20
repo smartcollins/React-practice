@@ -390,6 +390,8 @@
 .user-input{
   border: 1px solid #1EBA60;
   margin: 0 50px;
+  /*margin: 0 auto;*/
+  /*width: 80vw;*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2032,6 +2034,18 @@
   background-image: url(./image/poor.jpg);
 }
 
+.fund-detail{
+  text-align: left;
+}
+
+.fund-detail .user-input{
+  margin: 10px auto;
+  width: 85vw;
+}
+
+.fund-detail .nxt{
+  margin-top: 20px;
+}
 
 
 

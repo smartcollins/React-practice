@@ -35,7 +35,8 @@ function Profile(){
 						<h2>Fill Your Profile</h2>
 					</div>
 					<div className={edit?"user-2":"user"}>
-						{edit?
+						{
+							edit ?
 							<User style={{visibility: "hidden"}} className="user-icon" size={32} color="#7d7d7d" weight="duotone"/> :
 							<User className="user-icon" size={32} color="#7d7d7d" weight="duotone"/>
 						}

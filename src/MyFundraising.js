@@ -4,8 +4,14 @@ import Result from "./Result"
 import {UsersThree,BookmarkSimple,ArchiveBox,PlusCircle,ShareNetwork,PencilSimple} from "phosphor-react"
 
 function MyFundraising(){
+	const [going,setGoing] = useState(false)
 	const [pending,setPending] = useState(false)
 	const [result,setResult] = useState(false)
+
+	function onGoing(){
+		setGoing(true)
+		setPending(false)
+	}
 
 	function onPending(){
 		setPending(true)
@@ -55,7 +61,7 @@ function MyFundraising(){
 					</div>
 					<div className="urgent-btn">
 						<button style={style2}>All(25)</button>
-						<button style={pending?style2:style}>Ongoing(3)</button>
+						<button onClick={onGoing} style={pending?style2:style}>Ongoing(3)</button>
 						<button>Past(22)</button>
 						<button onClick={onPending} style={pending?style:style2}>Pending(1)</button>
 					</div>

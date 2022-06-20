@@ -1,6 +1,6 @@
 import {useState} from "react"
 import Result from "./Result"
-import {ArrowLeft,Trash,CaretDown} from "phosphor-react"
+import {ArrowLeft,Trash,CaretDown,CurrencyDollar} from "phosphor-react"
 
 function Edit(){
 	const [back,setBack] = useState(false)
@@ -43,10 +43,22 @@ function Edit(){
 									<div className="edit-img5"></div>
 								</div>
 							</div>
-							<div>
-								
+							<div className="fund-detail">
+								<h3>Fundraising Details</h3>
+								<div className="user-input">
+									<input type="text" placeholder="Title"/>
+									
+								</div>
+								<div className="user-input">
+									<input type="text" placeholder="Category"/>
+									<CaretDown size={20} color="#7d7d7d" weight="fill" />
+								</div>
+								<div className="user-input">
+									<input type="text" placeholder="Total Donation Required"/>
+									<CurrencyDollar size={20} color="#7d7d7d" weight="fill" />
+								</div>
+								<button onClick="onUpdate" className="nxt">Update & Submit</button>
 							</div>
-							
 						</div>
 					}
 				</div>
