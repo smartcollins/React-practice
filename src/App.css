@@ -2081,6 +2081,79 @@
   margin-top: 20px;
 }
 
+.activity h3{
+  color: #868e99;
+  text-align: left;
+}
+
+.activity-sub:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.activity-sub{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.activity-sub button{
+  background-color: transparent;
+  color: #1eba60;
+  border: 2px solid #1eba60;
+  border-radius: 20px;
+  /*padding:10px 20px;*/
+  width: 40%;
+  padding: 10px;
+}
+
+.activity-min{
+  display: flex;
+  align-items: center;
+}
+
+
+.activity-min .donator-img{
+  padding: 30px;
+}
+
+.activity-img{
+  background-image: url(./image/baby.jpg);
+  padding: 30px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.activity-txt{
+  /*width: 50%;*/
+  text-align: left;
+}
+
+.activity-txt span{
+  color: #1eba60;
+  font-weight: bold;
+}
+
+/*.activity-min p span{
+  color: #1eba60;
+  font-weight: bold;
+}
+*/
+
+
+
+
+
+
+
+
+
+
 
 
 

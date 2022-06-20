@@ -3,7 +3,7 @@ import Share from "./Share"
 import Info from "./Info"
 import {ArrowLeft,MagnifyingGlass,SmileyWink,Smiley,House} from "phosphor-react"
 
-function Donators(){
+function Donators(props){
 	const [back,setBack] = useState(false)
 	const [healthy,setHealthy] = useState(false)
 
@@ -88,6 +88,7 @@ function Donators(){
 					</div>
 				</div>
 			}
+			
 		</div>
 		)
 }
