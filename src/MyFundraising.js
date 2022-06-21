@@ -2,6 +2,7 @@ import {useState} from "react"
 import Menu from "./Menu"
 import Result from "./Result"
 import Activity from "./Activity"
+import Say from "./Say"
 import {UsersThree,BookmarkSimple,ArchiveBox,PlusCircle,ShareNetwork,PencilSimple} from "phosphor-react"
 
 function MyFundraising(){
@@ -9,6 +10,7 @@ function MyFundraising(){
 	const [going,setGoing] = useState(false)
 	const [pending,setPending] = useState(false)
 	const [result,setResult] = useState(false)
+	const [say,setSay] = useState(false)
 
 	function onActivity(){
 		setActivity(true)
@@ -25,6 +27,10 @@ function MyFundraising(){
 
 	function onResult(){
 		setResult(true)
+	}
+
+	function sayThanks(){
+		setSay(true)
 	}
 
 	const style={
@@ -49,6 +55,8 @@ function MyFundraising(){
 	return(
 		<div>
 			{
+				say ?
+				<Say/> :
 				result ?
 				<Result/>:
 				<div>
@@ -67,7 +75,9 @@ function MyFundraising(){
 					</div>
 					{
 						activity ?
-						<Activity/> :
+						<Activity
+							sayThanks={sayThanks}
+						/> :
 						<div>
 							<div className="urgent-btn">
 								<button style={style2}>All(25)</button>

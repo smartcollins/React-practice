@@ -2149,8 +2149,50 @@
   bottom: 0;
 }
 
+.recent {
+  background-color: #ebeef2;
+  width: 20%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.recent h3{
+  padding: 5px;
+  /*color: lightgrey;*/
+  color: #9ba1a8;
+}
+
+.response{
+  background-color: #1ab75d;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 20vw;
+  border-radius: 10px 0 10px 10px;
+  padding: 0px 15px;
+}
+
+.response p{
+  color: white;
+}
+
+.response p:first-child{
+  width: 60%;
+  text-align: left;
+}
+.say{
+  position: relative;
+  height: 100vh;
+}
 
 
+.say .send{
+  position: absolute;
+  width: 90%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 
 

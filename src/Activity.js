@@ -2,7 +2,14 @@ import {useState} from "react"
 import MyFundraising from "./MyFundraising"
 import {UserThree,ArchiveBox,SmileyWink,Circle} from "phosphor-react"
 
-function Activity(){
+function Activity({sayThanks}){
+	// // const [thanks,setThanks] = useState(false)
+
+	// function onThanks(){
+	// 	// setThanks(true)
+
+	// }
+
 	return(
 		<div>
 			<div className="activity">
@@ -20,7 +27,7 @@ function Activity(){
 							</p>
 						</div>
 					</div>
-					<button>Say Thanks</button>
+					<button onClick={sayThanks}>Say Thanks</button>
 				</div>
 				<div className="activity-sub">
 					<div className="activity-min">
