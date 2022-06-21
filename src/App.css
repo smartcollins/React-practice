@@ -1678,11 +1678,13 @@
   background-position: 50% 50%;
   background-size: cover;
   margin-right: 10px;
+  position: relative;
 }
 
 .donator-ayms{
   display: flex;
   align-items: center;
+  /*position: relative;*/
 }
 
 .donator-ayms p, .donator-info p{
@@ -1693,6 +1695,7 @@
   background-color: #1EBA60;
   /*border: 1px solid black;*/
   padding: 5px;
+  position: relative;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -2120,6 +2123,7 @@
 }
 
 .activity-img{
+  position: relative;
   background-image: url(./image/baby.jpg);
   padding: 30px;
   border-radius: 50%;
@@ -2139,11 +2143,12 @@
   font-weight: bold;
 }
 
-/*.activity-min p span{
-  color: #1eba60;
-  font-weight: bold;
+.active-btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
-*/
+
 
 
 

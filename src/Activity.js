@@ -1,6 +1,6 @@
 import {useState} from "react"
 import MyFundraising from "./MyFundraising"
-import {UserThree,ArchiveBox,SmileyWink} from "phosphor-react"
+import {UserThree,ArchiveBox,SmileyWink,Circle} from "phosphor-react"
 
 function Activity(){
 	return(
@@ -9,7 +9,9 @@ function Activity(){
 				<h3>Today, December 25 2023</h3>
 				<div className="activity-sub">
 					<div className="activity-min">
-						<div className="activity-img"></div>
+						<div className="activity-img">
+							<Circle className="active-btn" size={16} color="#1eba60" weight="fill"/>
+						</div>
 						<div className="activity-txt">
 							<p>
 								<span>Jane copper </span>
@@ -25,6 +27,7 @@ function Activity(){
 						<div className="donator-ayms">
 							<div>
 								<SmileyWink size={30} color="#ffffff" />
+								<Circle className="active-btn" size={16} color="#A5ABB3" weight="fill"/>
 							</div>
 						</div>
 						<div className="activity-txt">
@@ -39,7 +42,9 @@ function Activity(){
 				</div>
 				<div className="activity-sub">
 					<div className="activity-min">
-						<div className="donator-img"></div>
+						<div className="donator-img">
+							<Circle className="active-btn" size={16} color="#1eba60" weight="fill"/>
+						</div>
 						<div className="activity-txt">
 							<p>
 								<span>Jenny Wilson </span>
@@ -55,6 +60,7 @@ function Activity(){
 						<div className="donator-ayms">
 							<div>
 								<SmileyWink size={30} color="#ffffff" />
+								<Circle className="active-btn" size={16} color="#A5ABB3" weight="fill"/>
 							</div>
 						</div>
 						<div className="activity-txt">
@@ -72,7 +78,9 @@ function Activity(){
 				<h3>Yesterday, December 24 2023</h3>
 				<div className="activity-sub">
 					<div className="activity-min">
-						<div className="activity-img"></div>
+						<div className="activity-img">
+							<Circle className="active-btn" size={16} color="#1eba60" weight="fill"/>
+						</div>
 						<div className="activity-txt">
 							<p>
 								<span>Robbert Hawkins </span>
@@ -85,7 +93,9 @@ function Activity(){
 				</div>
 				<div className="activity-sub">
 					<div className="activity-min">
-						<div className="donator-img"></div>
+						<div className="donator-img">
+							<Circle className="active-btn" size={16} color="#1eba60" weight="fill"/>
+						</div>
 						<div className="activity-txt">
 							<p>
 								<span>Kristin Watson </span>
