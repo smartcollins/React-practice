@@ -6,11 +6,17 @@ import Say from "./Say"
 import {UsersThree,BookmarkSimple,ArchiveBox,PlusCircle,ShareNetwork,PencilSimple} from "phosphor-react"
 
 function MyFundraising(){
+	// const [fund,setFund] = useState(false)
 	const [activity,setActivity] = useState(false)
 	const [going,setGoing] = useState(false)
 	const [pending,setPending] = useState(false)
 	const [result,setResult] = useState(false)
 	const [say,setSay] = useState(false)
+
+	function onFund(){
+		// setFund(true)
+		setActivity(false)
+	}
 
 	function onActivity(){
 		setActivity(true)
@@ -70,8 +76,8 @@ function MyFundraising(){
 						</button>
 					</div>
 					<div className="myfund-top">
-						<h3>MyFundraising</h3>
-						<h3 onClick={onActivity}>Activity</h3>
+						<h3 style={{borderBottom: activity?"4px solid lightgrey":"4px solid #1EBA60"}} onClick={onFund}>MyFundraising</h3>
+						<h3 style={{borderBottom: activity?"4px solid #1EBA60":"4px solid lightgrey"}} onClick={onActivity}>Activity</h3>
 					</div>
 					{
 						activity ?

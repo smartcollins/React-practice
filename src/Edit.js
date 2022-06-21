@@ -1,13 +1,13 @@
 import {useState} from "react"
 import Result from "./Result"
 import MyFundraising from "./MyFundraising"
+import Create from "./Create"
 import {ArrowLeft,Trash,CaretDown,CurrencyDollar,TrashSimple} from "phosphor-react"
 
 function Edit(){
 	const [back,setBack] = useState(false)
 	const [del,setDel] = useState(false)
 	const [update,setUpdate] = useState(false)
-	const [cancel,setCancel] = useState(false)
 	const [unpublish,setUnpublish] = useState(false)
 
 	function onBack(){
@@ -41,7 +41,7 @@ function Edit(){
 						update ?
 						<MyFundraising/> :
 						unpublish ?
-						<MyFundraising/> :
+						<Create/> :
 						<div className="edit">
 							<div className="great">
 								<div>
