@@ -490,6 +490,7 @@
   border-radius: 25px;
   border: 1px solid #1EBA60;
   background-color: transparent;
+  color: #1eba60;
 }
 
 .great-btn button:last-child{
@@ -2099,6 +2100,15 @@
   width: 85vw;
 }
 
+.by{
+  display: flex;
+  align-items: center;
+}
+
+.by label{
+  margin-left: 10px;
+}
+
 .fund-detail .nxt{
   margin-top: 20px;
 }
@@ -2212,6 +2222,13 @@
   transform: translate(-50%,-50%);
 }
 
+.create-new{
+  position: relative;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+
 .create-new .bookmark-top{
   margin: 20px auto;
 }
@@ -2236,12 +2253,22 @@
 
 .edit-grid{
   padding-bottom: 20px;
-  /*border: 2px solid black;*/
   border-bottom: 1px solid lightgrey;
-
 }
 
+.fund-detail .great-btn{
+  margin-top: 20px;
+}
 
+.fund-detail .great-btn button:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.fund-detail*/ .great-btn button:first-child p{
+  margin: 0;
+}
 
 
 
