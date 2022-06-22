@@ -2151,15 +2151,33 @@
   padding: 30px;
 }
 
-.activity-img{
+.activity-img, .activity-img2, .activity-img3, .activity-img4, .activity-img5{
   position: relative;
-  background-image: url(./image/baby.jpg);
   padding: 30px;
   border-radius: 50%;
   object-fit: contain;
   background-position: 50% 50%;
   background-size: cover;
   margin-right: 10px;
+}
+
+.activity-img{
+  background-image: url(./image/baby.jpg);
+}
+
+.activity-img2{
+  background-image: url(./image/dp.jpg);
+}
+.activity-img3{
+  background-image: url(./image/mal.jpg);
+}
+
+.activity-img4{
+  background-image: url(./image/poor.jpg);
+}
+
+.activity-img5{
+  background-image: url(./image/flood2.jpg);
 }
 
 .activity-txt{
@@ -2176,6 +2194,17 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.activity-time p:first-child{
+  background-color: #1eba60;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.activity-time p:last-child{
+  color: #A5ABB3;
 }
 
 .recent {
@@ -2274,8 +2303,44 @@
   margin: 0;
 }
 
+.inbox{
+  /*background-color: red;*/
+}
 
+.inbox .search-max{
+  justify-content: space-between;
+}
 
+.inbox .search-min{
+  width: 80%;
+}
+
+.inbox .search-max .dot3{
+  padding: 10px;
+}
+
+.inbox .activity-sub{
+  padding: 0 5px;
+}
+
+.activity-past{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 0 10px; 
+}
+
+.activity-past:not(:last-child){
+  margin-bottom: 20px;
+}
+
+ .past-txt{
+  color: #8c939c;
+}
+
+ 
 
 
 
