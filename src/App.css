@@ -2352,11 +2352,51 @@
   width: 100%;
 }
 
- 
+.message {
+  height: 100%;
+  position: relative;
+}
 
+.message-txt{
+  border-radius: 10px;
+  background-color: #f4f6f9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
+.message-txt P:first-child{
+  width: 75%;
+  /*color: #333945;*/
+}
 
+.message-txt P:last-child{
+  color: lightgrey;
+}
 
+.message .response P:first-child{
+  width: 90%;
+}
+
+.message .response {
+  margin-bottom: 10px;
+}
+
+/*.say .message-txt:last-child{
+  background-color: red;
+  margin-bottom: 10px;
+}
+*/
+
+.message .send{
+  position: absolute;
+  width: 90%;
+  /*top: 100%;*/
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 
 

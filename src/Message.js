@@ -27,37 +27,46 @@ function Message(){
 				back?
 				<Inbox/>:
 				<div className="message">
-					<div className="say">
-						<div className="bookmark-top">
-							<div className="back">
-								<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
-								<h3>Kathryn Murphy</h3>
-							</div>
-							<div className="prayer2-top">
-								<button className="dot3">
-									<Prohibit size={20} color="#1EBA60" />
-								</button>
-								<button className="dot3">
-									<DotsThreeVertical size={20} color="#1EBA60" />
-								</button>
-							</div>
+					<div className="bookmark-top">
+						<div className="back">
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
+							<h3>Jane Cooper</h3>
 						</div>
+						<div className="prayer2-top">
+							<button className="dot3">
+								<Prohibit size={20} color="#1EBA60" />
+							</button>
+							<button className="dot3">
+								<DotsThreeVertical size={20} color="#1EBA60" />
+							</button>
+						</div>
+					</div>
+					<div>
 						<div className="recent">
 							<h3>Today</h3>
 						</div>
-						<div className="activity-sub">
-							<div className="activity-min">
-								<div className="activity-txt">
-									<p>
-										<span>Jane copper </span>
-										 has donated 
-										 <span> $25</span>
-									</p>
-								</div>
-							</div>
+						<div className="message-txt">
+							<p>Hello, good morning!😊 </p>
+							<p>09:41</p>
+						</div>
+						<div className="message-txt">
+							<p>I am interested in making a donation. May i know what the donation program you have just published is for?😊 </p>
+							<p>09:41</p>
 						</div>
 						<div className="response">
-							<p>Thank you very much Jane, God bless your kindness</p>
+							<p>Hi, good afternoon. Donations will be distributed to flood victims in Surabuya.You can see detailed information in my post</p>
+							<p>09:41</p>
+						</div>
+						<div className="message-txt">
+							<p>Great, thanks a lot for the information</p>
+							<p>09:41</p>
+						</div>
+						<div className="message-txt">
+							<p>i will make a donation as soon as possible after this</p>
+							<p>09:41</p>
+						</div>
+						<div className="response">
+							<p>You're welcome. Thank you for the donations that will be given.</p>
 							<p>09:41</p>
 						</div>
 						<div className="send" onClick={onSend} style={style}>
