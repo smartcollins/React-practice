@@ -2395,11 +2395,32 @@
   width: 90%;
   /*top: 100%;*/
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,50%);
 }
 
+.message .share-main{
+  background-color: gold;
+  /*visibility: hidden;*/
+  visibility: visible;
+  /*height: 50vh;*/
+  padding: 50px 0;
+  font-weight: bold;
+}
 
+.message .share-main span{
+  color: #1EBA60;
+}
 
+/*.message .success{
+  background-color: #535861;
+  opacity: 0.6;
+  filter: grayscale(100%) blur(1px) brightness(100%);
+}
+*/
+
+.message .great-btn{
+  justify-content: space-around;
+}
 
 
 
