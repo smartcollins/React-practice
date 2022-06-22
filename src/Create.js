@@ -73,21 +73,21 @@ function Create(){
 						</div>
 						<div>
 							<div className={add?"edit-img":"create-new-top"} onClick={onAdd}>
-								<Plus size={20} color="#1ab75d" weight="duotone" />
-								<p>Add Cover Photos</p>
+								<Plus className={add?"edit-grid-null":""}size={20} color="#1ab75d" weight="duotone" />
+								<p className={add?"edit-grid-null":""}>Add Cover Photos</p>
 							</div>
 							<div className="edit-grid">
-								<div className={add?"edit-img2":""}>
-									<Plus size={20} color="#1ab75d" weight="duotone" />
+								<div className={add?"edit-img2":"edit-dash"}>
+									<Plus className={add?"edit-grid-null":""} size={20} color="#1ab75d" weight="duotone" />
 								</div>
-								<div className={add?"edit-img3":""}>
-									<Plus size={20} color="#1ab75d" weight="duotone" />
+								<div className={add?"edit-img3":"edit-dash"}>
+									<Plus className={add?"edit-grid-null":""} size={20} color="#1ab75d" weight="duotone" />
 								</div>
-								<div className={add?"edit-img4":""}>
-									<Plus size={20} color="#1ab75d" weight="duotone" />
+								<div className={add?"edit-img4":"edit-dash"}>
+									<Plus className={add?"edit-grid-null":""} size={20} color="#1ab75d" weight="duotone" />
 								</div>
-								<div className={add?"edit-img5":""}>
-									<Plus size={20} color="#1ab75d" weight="duotone" />
+								<div className={add?"edit-img5":"edit-dash"}>
+									<Plus className={add?"edit-grid-null":""} size={20} color="#1ab75d" weight="duotone" />
 								</div>
 							</div>
 							<div className="fund-detail">

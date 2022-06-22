@@ -2245,10 +2245,14 @@
   color: #8c939c;
 }
 
-.create-new .edit-grid div{
+.edit-dash{
   background-color: #f4f6f9;
   border: 2px dashed lightgray;
   border-radius: 10px;
+}
+
+.edit-grid-null{
+  visibility: hidden;
 }
 
 .edit-grid{
