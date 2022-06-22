@@ -844,19 +844,18 @@
 }
 
 .prayer-img{
-  height: 10vh;
-  width: 15vw;
   background-image: url(./image/dp.jpg);
+  position: relative;
+  padding: 30px;
+  border-radius: 50%;
   object-fit: contain;
   background-position: 50% 50%;
   background-size: cover;
-  border-radius: 50%;
   margin-right: 10px;
 }
 
 .prayer-profile{
-  margin-bottom: 10px;
-   
+  margin-bottom: 10px;   
 }
 
 .prayer-profile h6{
@@ -2159,6 +2158,15 @@
   background-position: 50% 50%;
   background-size: cover;
   margin-right: 10px;
+/*
+  height: 10vh;
+  width: 15vw;
+  background-image: url(./image/dp.jpg);
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;*/
 }
 
 .activity-img{
@@ -2338,6 +2346,10 @@
 
  .past-txt{
   color: #8c939c;
+}
+
+.message .back h3{
+  width: 100%;
 }
 
  

@@ -44,7 +44,7 @@ function Inbox(){
 									<FunnelSimple size={20} color="#1EBA60" weight="fill" />
 								</button>
 							</div>
-							<div className="activity-sub">
+							<div onClick={onUser} className="activity-sub">
 								<div className="activity-min">
 									<div className="activity-img">
 										<Circle className="active-btn" size={16} color="#1eba60" weight="fill"/>
