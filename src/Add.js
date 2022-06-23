@@ -1,6 +1,6 @@
 import {useState} from "react"
 import TopUp from "./TopUp"
-import {ArrowLeft,CalendarBlank,CaretDown,CurrencyDollar} from "phosphor-react"
+import {ArrowLeft,CalendarBlank,CaretDown,CurrencyDollar,QrCode,CurrencyBtc,CreditCard,AppleLogo} from "phosphor-react"
 
 function Add(){
 	const [back,setBack] = useState(false)
@@ -27,12 +27,65 @@ function Add(){
 				<div>
 					{
 						add?
-						<div></div>:
 						<div>
 							<div className="bookmark-top">
 								<div className="back">
 									<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
-									<h1>Withdraw</h1>
+									<h1>Top up</h1>
+								</div>
+								<button className="dot3">
+									<QrCode size={30} color="#1EBA60" />
+								</button>
+							</div>
+							<div className="coming-top">
+								<h3>Select Top up Method</h3>
+								<h5>Add Card</h5>
+							</div>
+							<div className="payment-btn">
+								<div className="home-mid">
+									<div className="wallet">
+										<button>
+											<CurrencyBtc size={20} color="#1EBA60" />
+										</button>
+										<p>Bitcoin wallet</p>
+									</div>
+									<input id="donate" type="radio"/>
+								</div>
+								<div className="home-mid">
+									<div className="wallet">
+										<button>
+											<CreditCard size={20} color="#1EBA60" weight="duotone" />
+										</button>
+										<p>Credit card</p>
+									</div>
+									<input id="donate" type="radio"/>
+								</div>
+								<div className="home-mid">
+									<div className="wallet">
+										<button>
+											<AppleLogo size={20} color="#1EBA60" weight="duotone"/>
+										</button>
+										<p>Apple play</p>
+									</div>
+									<input id="donate" type="radio"/>
+								</div>
+								<h3>Pay with Debit/Credit Card</h3>
+								<div className="home-mid">
+									<div className="wallet">
+										<button>
+											<AppleLogo size={20} color="#1EBA60" weight="duotone"/>
+										</button>
+										<p>Apple play</p>
+									</div>
+									<input id="donate" type="radio"/>
+								</div>
+							</div>
+						</div>:
+						<div>
+							<div className="bookmark-top">
+								<div className="back">
+									<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
+									<h1>Add New Card</h1>
 								</div>
 							</div>
 							<div className="fund-detail">
@@ -62,6 +115,9 @@ function Add(){
 										</div>
 									</div>	
 								</div>	
+							</div>
+							<div>
+								<button onClick={onAdd} className="nxt">Add New Card</button>
 							</div>
 						</div>
 					}
