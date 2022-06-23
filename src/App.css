@@ -2431,9 +2431,43 @@
   margin-right: 10px;
 }
 
+.wallet-center .donated{
+  height: auto;
+}
+
+.wallet-center .donated p:first-child{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.wallet-center .donated p:last-child{
+  color: black;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.wallet-center .remove-btn button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-center .remove-btn p{
+  padding-left: 10px;
+  margin: 0;
+}
+
+.wallet-center .remove-btn button:first-child{
+  background-color: #1EBA60;
+  color: white;
+}
 
 
-
+.wallet-center .remove-btn button:last-child{
+  background-color: white;
+  color: #1EBA60;
+  border: 1px solid #1EBA60
+}
 
 
 

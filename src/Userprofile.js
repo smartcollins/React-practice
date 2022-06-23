@@ -1,11 +1,13 @@
 import {useState} from "react"
 import MyFundraising from "./MyFundraising"
 import Menu from "./Menu"
+import WalletCenter from "./WalletCenter"
 import {UsersThree,User,Gear,DotsThreeVertical,PencilSimple,Wallet} from "phosphor-react"
 
 function Userprofile(){
 	const [user,setUser] = useState(false)
 	const [edit,setEdit] = useState(false)
+	const [top,setTop] = useState(false)
 
 	function onUser(){
 		setUser(true)
@@ -15,9 +17,15 @@ function Userprofile(){
 		setEdit(true)
 	}
 
+	function onTop(){
+		setTop(true)
+	}
+
 	return(
 		<div>
 			{
+				top ?
+				<WalletCenter/>:
 				user ?
 				<MyFundraising/> :
 				<div>
@@ -73,7 +81,7 @@ function Userprofile(){
 								<p>My wallet balance</p>
 							</div>
 						</div>
-						<button>Top up</button>
+						<button onClick={onTop}>Top up</button>
 					</div>
 					<div className="activity-txt">
 						<h3>About</h3>
