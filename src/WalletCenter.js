@@ -1,12 +1,18 @@
 import {useState} from "react"
 import Userprofile from "./Userprofile"
+import TopUp from "./TopUp"
 import {ArrowLeft,DotsThreeVertical,ArrowFatLineUp,ArrowFatLineDown,CheckCircle,Bell,XCircle} from "phosphor-react"
 
 function WalletCenter(){
 	const [back,setBack] = useState(false)
+	const [top,setTop] = useState(false)
 
 	function onBack(){
 		setBack(true)
+	}
+
+	function onTop(){
+		setTop(true)
 	}
 
 	return(
@@ -14,6 +20,8 @@ function WalletCenter(){
 			{
 				back?
 				<Userprofile/>:
+				top?
+				<TopUp/>:
 				<div className="wallet-center">
 					<div className="bookmark-top">
 						<div className="back">
@@ -31,7 +39,7 @@ function WalletCenter(){
 						</button>
 					</div>
 					<div className="remove-btn">
-						<button>
+						<button onClick={onTop}>
 							<ArrowFatLineUp size={20} color="#ffffff" />
 							<p>Top up</p>
 						</button>
@@ -55,26 +63,25 @@ function WalletCenter(){
 							</div>
 						</div>
 						<div className="notify-bar">
-										<button className="notify-logo cancel">
-											<XCircle size={20} color="#ffffff" weight="fill"/>
-										</button>
-										<div>
-											<h5>Donation Cancelled!</h5>
-											<p>You have cancel donation for victims of natural disasters</p>
-										</div>
+							<button className="notify-logo cancel">
+								<XCircle size={20} color="#ffffff" weight="fill"/>
+							</button>
+							<div>
+								<h5>Donation Cancelled!</h5>
+								<p>You have cancel donation for victims of natural disasters</p>
+							</div>
 
-									</div>
-									<p>Yesterday, December 24 2023</p>
-									<div className="notify-bar">
-										<button className="notify-logo new">
-											<Bell size={20} color="#ffffff" weight="fill" />
-										</button>
-										<div>
-											<h5>New Feature Available</h5>
-											<p>You can now invite friends to join donation with you</p>
-										</div>
-									</div>
-
+						</div>
+						<p>Yesterday, December 24 2023</p>
+						<div className="notify-bar">
+							<button className="notify-logo new">
+								<Bell size={20} color="#ffffff" weight="fill" />
+							</button>
+							<div>
+								<h5>New Feature Available</h5>
+								<p>You can now invite friends to join donation with you</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			}
