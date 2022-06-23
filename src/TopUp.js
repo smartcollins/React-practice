@@ -1,6 +1,7 @@
 import React from "react"
 import {useState} from "react"
 import WalletCenter from "./WalletCenter"
+import Add from "./Add"
 import {ArrowLeft,DotsThreeVertical,QrCode,Wallet,CurrencyBtc,CurrencyEth,AppleLogo,CreditCard} from "phosphor-react"
 
 
@@ -35,6 +36,8 @@ function TopUp(){
 			{
 				back?
 				<WalletCenter/>:
+				cont2?
+				<Add/>:
 				<div>
 					{
 						cont1?
@@ -55,7 +58,7 @@ function TopUp(){
 										<button>
 											<CurrencyBtc size={20} color="#1EBA60" />
 										</button>
-										
+										<p>Bitcoin wallet</p>
 									</div>
 									<input id="donate" type="radio"/>
 								</div>
@@ -64,6 +67,7 @@ function TopUp(){
 										<button>
 											<CreditCard size={20} color="#1EBA60" weight="duotone" />
 										</button>
+										<p>Credit card</p>
 									</div>
 									<input id="donate" type="radio"/>
 								</div>
@@ -72,6 +76,7 @@ function TopUp(){
 										<button>
 											<AppleLogo size={20} color="#1EBA60" weight="duotone"/>
 										</button>
+										<p>Apple play</p>
 									</div>
 									<input id="donate" type="radio"/>
 								</div>

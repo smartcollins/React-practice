@@ -2484,6 +2484,45 @@
   justify-content: space-between;
 }
 
+.add-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add-end .user-input{
+  /*width: 100%;*/
+  width: auto;
+}
+
+.add-end div:first-child{
+  width:70%;
+  /*background-color: red;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
