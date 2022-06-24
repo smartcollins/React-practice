@@ -1,11 +1,13 @@
 import {useState} from "react"
 import Userprofile from "./Userprofile"
 import TopUp from "./TopUp"
+import Withdraw from "./Withdraw"
 import {ArrowLeft,DotsThreeVertical,ArrowFatLineUp,ArrowFatLineDown,CheckCircle,Bell,XCircle} from "phosphor-react"
 
 function WalletCenter(){
 	const [back,setBack] = useState(false)
 	const [top,setTop] = useState(false)
+	const [withdraw,setWithdraw] = useState(false)
 
 	function onBack(){
 		setBack(true)
@@ -15,6 +17,11 @@ function WalletCenter(){
 		setTop(true)
 	}
 
+	function onWithdraw(){
+		setWithdraw(true)
+	}
+
+
 	return(
 		<div>
 			{
@@ -22,6 +29,8 @@ function WalletCenter(){
 				<Userprofile/>:
 				top?
 				<TopUp/>:
+				withdraw?
+				<Withdraw/>:
 				<div className="wallet-center">
 					<div className="bookmark-top">
 						<div className="back">
@@ -43,7 +52,7 @@ function WalletCenter(){
 							<ArrowFatLineUp size={20} color="#ffffff" />
 							<p>Top up</p>
 						</button>
-						<button>
+						<button onClick={onWithdraw}>
 							<ArrowFatLineDown size={20} color="#1EBA60" />
 							<p>Withdraw</p>
 						</button>

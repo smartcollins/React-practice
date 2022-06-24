@@ -45,11 +45,11 @@ function TopUp(){
 							<div className="bookmark-top">
 								<div className="back">
 									<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
-									<h1>Withdraw</h1>
+									<h1>Top up</h1>
 								</div>
 							</div>
 							<div className="coming-top">
-								<h3>Select Withdraw Method</h3>
+								<h3>Select Top up Method</h3>
 								<h5>Add Card</h5>
 							</div>
 							<div className="payment-btn">
@@ -91,7 +91,7 @@ function TopUp(){
 							<div className="bookmark-top">
 								<div className="back">
 									<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
-									<h1>Withdraw</h1>
+									<h1>Top up</h1>
 								</div>
 								<button className="dot3">
 									<DotsThreeVertical size={30} color="#1EBA60" />
@@ -102,7 +102,7 @@ function TopUp(){
 							</div>
 							<div>
 								<button className="donated">
-									<p>$300</p>
+									<p>$100</p>
 								</button>
 							</div>
 							<div className="amount">
