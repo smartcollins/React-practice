@@ -27,7 +27,7 @@ function Add(){
 				<div>
 					{
 						add?
-						<div>
+						<div className="topup2">
 							<div className="bookmark-top">
 								<div className="back">
 									<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
@@ -80,6 +80,8 @@ function Add(){
 									<input id="donate" type="radio"/>
 								</div>
 							</div>
+							<br/>
+							<button className="nxt">Continue</button>
 						</div>:
 						<div>
 							<div className="bookmark-top">
@@ -87,6 +89,9 @@ function Add(){
 									<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
 									<h1>Add New Card</h1>
 								</div>
+							</div>
+							<div className="new-card">
+								
 							</div>
 							<div className="fund-detail">
 								<p>Full Name <span>*</span></p>
@@ -100,14 +105,14 @@ function Add(){
 									<CaretDown size={20} color="#7d7d7d" weight="fill" />
 								</div>
 								<div className="add-end">
-									<div>
+									<div className="add-end1">
 										<p>Expiry Date <span>*</span></p>
 										<div className="user-input">
 											<input type="text" placeholder="Expiry Date Donation Required"/>
 											<CurrencyDollar size={20} color="#7d7d7d" weight="fill" />
 										</div>
 									</div>
-									<div>	
+									<div className="add-end2">	
 										<p>CVV <span>*</span></p>
 										<div className="user-input">
 											<input type="text" placeholder="Select Date"/>
@@ -116,6 +121,8 @@ function Add(){
 									</div>	
 								</div>	
 							</div>
+							<br/>
+							<br/>
 							<div>
 								<button onClick={onAdd} className="nxt">Add New Card</button>
 							</div>

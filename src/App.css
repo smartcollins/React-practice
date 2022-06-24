@@ -2484,6 +2484,22 @@
   justify-content: space-between;
 }
 
+.topup2  h3{
+  text-align: left;
+}
+
+
+.new-card{
+  background-image: url(./image/card.webp);
+  padding: 10px;
+  height: 40vh;
+  background-position: 50% 50%;
+  object-fit: contain;
+  position: relative;
+  background-size: cover;
+  border-radius: 10px;
+}
+
 .add-end{
   display: flex;
   align-items: center;
@@ -2492,14 +2508,17 @@
 }
 
 .add-end .user-input{
-  /*width: 100%;*/
   width: auto;
 }
 
-.add-end div:first-child{
-  width:70%;
-  /*background-color: red;*/
+.add-end1{
+  width:60%;
 }
+
+.add-end2{
+  width: 30%;
+}
+
 
 
 
