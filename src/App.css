@@ -2520,6 +2520,32 @@
   width: 30%;
 }
 
+.mail{
+  background-image: url(./image/email.png);
+  /*padding: 50px;
+  margin: 20px 0;
+  height: 30vh;
+  background-position: 50% 50%;
+  object-fit: contain;
+  background-size: cover;
+  border: 1px solid red;*/
+  border-radius: 20px;
+  height: 40vh;
+  /*object-fit: contain;
+  /*object-fit: cover;*/
+  background-position: 50% 50%;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+
+
+
+
+
 
 
 

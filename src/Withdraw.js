@@ -1,11 +1,13 @@
 import {useState} from "react"
 import WalletCenter from "./WalletCenter"
-import {ArrowLeft,DotsThreeVertical,QrCode,Wallet,CurrencyBtc,CurrencyEth,AppleLogo,CreditCard} from "phosphor-react"
+import {ArrowLeft,DotsThreeVertical,QrCode,Wallet,CurrencyBtc,CurrencyEth,AppleLogo,CreditCard,Envelope,Circle,CheckCircle} from "phosphor-react"
 
 function Withdraw(){
 	const [back,setBack] = useState(false)
 	const [cont1,setCont1] = useState(false)
 	const [cont2,setCont2] = useState(false)
+	const [cont3,setCont3] = useState(false)
+	const [confirm,setConfirm] = useState(false)
 
 	function onBack(){
 		setBack(true)
@@ -19,6 +21,19 @@ function Withdraw(){
 		setCont2(true)
 	}
 
+	function onCont3(){
+		setCont3(true)
+	}
+
+	function onConfirm(){
+		setCont3(false)
+		setConfirm(true)
+	}
+
+	function onSuccess(){
+		setBack(true)
+	}
+
 	return(
 		<div>
 			{
@@ -26,6 +41,60 @@ function Withdraw(){
 				<WalletCenter/>:
 				<div>
 					{
+						cont2?
+						<div className="message">
+							{
+								confirm ?
+								<div className="great">
+									<div>
+										<CheckCircle size={30} color="#ffffff" weight="fill" />
+									</div>
+									<h2>Top up Succesful!</h2>
+									<p>You have successfully top up your wallet for $100</p>
+									<button onClick={onSuccess} className="nxt">Ok</button>
+								</div>:
+								<div></div>
+							}
+							<div className={confirm?"success":"topup2"}>
+								<div className="bookmark-top">
+									<div className="back">
+										<ArrowLeft size={30} color="#1EBA60" onClick={onBack}/>
+										<h1>{cont3?"Enter Pin":"Withdraw"}</h1>
+									</div>
+								</div>
+								{
+									cont3?
+									<div>
+										<div className="create">
+											<h3>Please Enter Your Pin</h3>
+											<Circle size={16} color="#1EBA60" weight="fill" />
+											<Circle size={16} color="#1EBA60" weight="fill" />
+											<Circle size={16} color="#1EBA60" weight="fill" />
+											<Circle size={16} color="#1EBA60" weight="fill" />
+											<Circle size={16} color="#E6E6E6" weight="fill" />
+											<Circle size={16} color="#E6E6E6" weight="fill" />
+										</div>
+									</div>:
+									<div>
+										<div className="mail"></div>
+										<div className="fund-detail">
+											<p>PayPal Email <span>*</span></p>
+											<div className="user-input">
+												<input placeholder="PayPal Email"/>
+												<Envelope size={20} color="#7d7d7d" weight="fill" />
+											</div>
+										</div>
+									</div>	
+								}
+								<br/>
+								<br/>
+								{
+									cont3?
+									<button onClick={onConfirm} className="nxt">Confirm</button>:
+									<button onClick={onCont3} className="nxt">Continue</button>
+								}
+							</div>
+						</div>:
 						cont1?
 						<div className="topup2">
 							<div className="bookmark-top">
