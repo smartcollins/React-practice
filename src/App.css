@@ -500,6 +500,7 @@
 }
 
 .success {
+  position: relative;
   /*background-blend-mode: darken;*/
   opacity: 0.3;
   filter: grayscale(10%) blur(1px) brightness(100%);
