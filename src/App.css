@@ -2557,6 +2557,18 @@
   background-color: #ffe8ed;
 }
 
+.editprofile-info{
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #ebeef2;
+  border-style: solid none none none;
+}
+
+.editprofile-info .user-input{
+  margin: 10px auto;
+  width: 85vw;
+
+}
 
 
 

@@ -1,12 +1,18 @@
 import {useState} from "react"
 import Userprofile from "./Userprofile"
+import Editprofile from "./Editprofile"
 import {ArrowLeft,CaretRight,User,Bell,Eye,ToggleLeft,Lock,Info,Users,SignOut} from "phosphor-react"
 
 function Setting(){
 	const [back,setBack] = useState(false)
+	const [edit,setEdit] = useState(false)
 
 	function onBack(){
 		setBack(true)
+	}
+
+	function onEdit(){
+		setEdit(true)
 	}
 
 	return(
@@ -14,6 +20,8 @@ function Setting(){
 			{
 				back?
 				<Userprofile/>:
+				edit?
+				<Editprofile/>:
 				<div>
 					<div className="bookmark-top">
 						<div className="back">
@@ -22,7 +30,7 @@ function Setting(){
 						</div>
 					</div>
 					<div>
-						<div className="setting-mid">
+						<div onClick={onEdit} className="setting-mid">
 							<div className="wallet">
 								<button>
 									<User size={20} color="#1EBA60" />
