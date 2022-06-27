@@ -2577,6 +2577,28 @@
   font-weight: bold;
 }
 
+.help-btn{
+  display: grid;
+  grid-template: auto/auto auto;
+  grid-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.help-btn button{
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1EBA60;
+  color: white;
+  /*height: 20vh;*/
+  padding: 20%;
+}
+
+
 
 
 
