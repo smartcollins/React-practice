@@ -1,8 +1,8 @@
 import {useState} from "react";
-import {ArrowLeft,User,Envelope,MapPin,Phone,CaretDown,PencilSimple} from "phosphor-react";
 import profile from "./image/dp.jpg";
 import Interest from "./Interest";
 import HomePage from "./HomePage";
+import {ArrowLeft,User,Envelope,MapPin,Phone,CaretDown,PencilSimple} from "phosphor-react";
 
 
 function Profile(){

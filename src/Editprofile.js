@@ -5,10 +5,7 @@ import {ArrowLeft,User,PencilSimple,Envelope,Phone,CaretDown,MapPin} from "phosp
 
 function Editprofile(){
 	const [back,setBack] = useState(false)
-
 	const [edit,setEdit] = useState(false)
-	const [verify,setVerify] =useState(false)
-
 
 	function onBack(){
 		setBack(true)
@@ -18,10 +15,9 @@ function Editprofile(){
 		setEdit(oldEdit=>!edit)
 	}
 
-	function onVerify(){
-		setVerify(true)
+	function onSave(){
+		setBack(true)
 	}
-
 
 	return(
 		<div>
@@ -47,27 +43,27 @@ function Editprofile(){
 					</div>
 					<div className="editprofile-info">
 						<div className="user-detail">
-						<div className="user-input">
-							<input placeholder="Full name"/>
+							<div className="user-input">
+								<input placeholder="Full name"/>
+							</div>
+							<div className="user-input">
+								<input placeholder="Email"/>
+								<Envelope size={20} color="#7d7d7d" weight="fill" />
+							</div>
+							<div className="user-input">
+								<input placeholder="Phone Number"/>
+								<Phone size={20} color="#7d7d7d" weight="duotone" />
+							</div>
+							<div className="user-input">
+								<input placeholder="Gender"/>
+								<CaretDown size={20} color="#7d7d7d" weight="duotone" />
+							</div>
+							<div className="user-input">
+								<input placeholder="City"/>
+								<MapPin size={20} color="#7d7d7d" />
+							</div>
 						</div>
-						<div className="user-input">
-							<input placeholder="Email"/>
-							<Envelope size={20} color="#7d7d7d" weight="fill" />
-						</div>
-						<div className="user-input">
-							<input placeholder="Phone Number"/>
-							<Phone size={20} color="#7d7d7d" weight="duotone" />
-						</div>
-						<div className="user-input">
-							<input placeholder="Gender"/>
-							<CaretDown size={20} color="#7d7d7d" weight="duotone" />
-						</div>
-						<div className="user-input">
-							<input placeholder="City"/>
-							<MapPin size={20} color="#7d7d7d" />
-						</div>
-					</div>
-					<button onClick={onVerify} className="nxt">Verify</button>
+						<button onClick={onSave} className="nxt">Save Changes</button>
 					</div>
 				</div>
 			}
