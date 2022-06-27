@@ -2598,6 +2598,31 @@
   padding: 20%;
 }
 
+.faqs-top{
+  border: 1px solid #ebeef2;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding:0 10px;
+}
+
+.faqs .faqs-top .setting-mid{
+  border: none;
+  margin: auto;
+}
+
+.faqs-top > p{
+  border-top: 2px solid #ebeef2;
+  text-align: left;
+  padding: 10px;
+}
+
+.faqs .setting-mid{
+  border: 1px solid #ebeef2;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 10px;
+}
 
 
 
