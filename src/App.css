@@ -2529,16 +2529,34 @@
   object-fit: contain;
   background-size: cover;
   border: 1px solid red;*/
-  border-radius: 20px;
-  height: 40vh;
   /*object-fit: contain;
   /*object-fit: cover;*/
-  background-position: 50% 50%;
   /*background-size: cover;*/
+  background-position: 50% 50%;
+  border-radius: 20px;
+  height: 40vh;
   background-repeat: no-repeat;
   background-size: contain;
 
 }
+
+.setting-mid{
+  border: 1px solid #ebeef2;
+  border-style: solid none none none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-mid p{
+  font-weight: bold;
+}
+
+.setting-mid .cancel{
+  background-color: #ffe8ed;
+}
+
 
 
 

@@ -2,12 +2,14 @@ import {useState} from "react"
 import MyFundraising from "./MyFundraising"
 import Menu from "./Menu"
 import WalletCenter from "./WalletCenter"
+import Setting from "./Setting"
 import {UsersThree,User,Gear,DotsThreeVertical,PencilSimple,Wallet} from "phosphor-react"
 
 function Userprofile(){
 	const [user,setUser] = useState(false)
 	const [edit,setEdit] = useState(false)
 	const [top,setTop] = useState(false)
+	const [gear,setGear] = useState(false)
 
 	function onUser(){
 		setUser(true)
@@ -21,13 +23,19 @@ function Userprofile(){
 		setTop(true)
 	}
 
+	function onGear(){
+		setGear(true)
+	}
+
 	return(
 		<div>
 			{
-				top ?
-				<WalletCenter/>:
 				user ?
 				<MyFundraising/> :
+				gear ?
+				<Setting/>:
+				top ?
+				<WalletCenter/>:
 				<div>
 					<div className="bookmark-top">
 						<div className="back">
@@ -35,7 +43,7 @@ function Userprofile(){
 							<h1>Profile</h1>
 						</div>
 						<div className="prayer2-top">
-							<button className="dot3">
+							<button onClick={onGear} className="dot3">
 								<Gear size={20} color="#1EBA60" />
 							</button>
 							<button className="dot3">
