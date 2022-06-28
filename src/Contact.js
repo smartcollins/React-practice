@@ -37,13 +37,15 @@ function Contact(){
 									<p><label for="mytext">Fund Usage <span>*</span></label></p>
 									<p>max word 250</p>
 								</div>
-								<textarea id="mytext" name="mytext" rows="2" cols="50">
-								lorem ipsum dolor sit amet, consectetur adipiscing elit,
-									Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam,quis nostrad.
-									Ut labore et dolore magna aliqua. Ut enim ad minim.
-								At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-								</textarea>
+								<div className="coming-top">
+									<textarea id="mytext" name="mytext" rows="2" cols="50">
+									lorem ipsum dolor sit amet, consectetur adipiscing elit,
+										Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam,quis nostrad.
+										Ut labore et dolore magna aliqua. Ut enim ad minim.
+									At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+									</textarea>
+								</div>
 							</div>
 						</div>
 						<div>

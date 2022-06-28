@@ -2640,8 +2640,17 @@
 .contact textarea{
   padding: 5px 10px;
   height: 20vh;
+  width: 100%;
 }
 
+.terms{
+  text-align: left;
+}
+
+.terms h1{
+  width: auto;
+  /*width: 80%;*/
+}
 
 
 
