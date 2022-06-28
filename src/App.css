@@ -2667,7 +2667,30 @@
   color: #1EBA60;
 }
 
+.invite .activity-sub{
+  padding: 0 10px 0 0 ;
+  align-items: center;
+}
 
+.invite .activity-sub .activity-img{
+  height: 5vh;
+  object-fit: contain;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  /*margin: 0;*/
+}
+
+
+.invite .activity-txt h3{
+  margin: 0;
+}
+
+.invite .activity-txt p{
+  margin: 0;
+  padding-top: 5px;
+}
 
 
 

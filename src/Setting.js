@@ -4,6 +4,7 @@ import Editprofile from "./Editprofile"
 import SettingNotify from "./SettingNotify"
 import Security from "./Security"
 import Help from "./Help"
+import Invite from "./Invite"
 import {ArrowLeft,CaretRight,User,Bell,Eye,ToggleLeft,Lock,Info,Users,SignOut} from "phosphor-react"
 
 function Setting(){
@@ -12,6 +13,7 @@ function Setting(){
 	const [notify,setNotify] = useState(false)
 	const [secure,setSecure] = useState(false)
 	const [help,setHelp] = useState(false)
+	const [invite,setInvite] = useState(false)
 
 	function onBack(){
 		setBack(true)
@@ -33,6 +35,10 @@ function Setting(){
 		setHelp(true)
 	}
 
+	function onInvite(){
+		setInvite(true)
+	}
+
 	return(
 		<div>
 			{
@@ -46,6 +52,8 @@ function Setting(){
 				<Security/>:
 				help?
 				<Help/>:
+				invite?
+				<Invite/>:
 				<div>
 					<div className="bookmark-top">
 						<div className="back">
@@ -99,7 +107,7 @@ function Setting(){
 							</div>
 							<CaretRight size={20} color="#1EBA60" />
 						</div>
-						<div className="setting-mid">
+						<div onClick={onInvite} className="setting-mid">
 							<div className="wallet">
 								<button>
 									<Users size={20} color="#1EBA60" />
