@@ -2599,7 +2599,7 @@
 }
 
 .faqs-top{
-  border: 1px solid #ebeef2;
+  border: 1px solid #1EBA60;
   margin-top: 20px;
   border-radius: 10px;
   padding:0 10px;
@@ -2611,7 +2611,7 @@
 }
 
 .faqs-top > p{
-  border-top: 2px solid #ebeef2;
+  border-top: 1px solid #ebeef2;
   text-align: left;
   padding: 10px;
 }
@@ -2624,7 +2624,23 @@
   border-radius: 10px;
 }
 
+.contact .nxt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.contact .nxt p{
+  margin: 0;
+  padding-right: 10px;
+  color: white;
+  font-weight: normal;
+}
+
+.contact textarea{
+  padding: 5px 10px;
+  height: 20vh;
+}
 
 
 
