@@ -2652,7 +2652,20 @@
   /*width: 80%;*/
 }
 
+.terms p{
+  color: #545D69;
+}
 
+.about-btn button{
+  background-color: #1EBA60;
+  border-radius: 50%;
+  padding: 30px;
+  border: none;
+}
+
+.about-btn h3{
+  color: #1EBA60;
+}
 
 
 
