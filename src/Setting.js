@@ -14,6 +14,7 @@ function Setting(){
 	const [secure,setSecure] = useState(false)
 	const [help,setHelp] = useState(false)
 	const [invite,setInvite] = useState(false)
+	const [log,setLog] = useState(false)
 
 	function onBack(){
 		setBack(true)
@@ -39,6 +40,13 @@ function Setting(){
 		setInvite(true)
 	}
 
+	function onLogOut(){
+		setLog(true)
+	}
+	function onCancel(){
+		setLog(false)
+	}
+
 	return(
 		<div>
 			{
@@ -54,8 +62,16 @@ function Setting(){
 				<Help/>:
 				invite?
 				<Invite/>:
-				<div>
-					<div className="bookmark-top">
+				<div className="message">
+					<div style={{visibility:log?"visible":"hidden"}} className="share-main">
+						<SignOut size={30} color="#1EBA60" />
+						<p>Are you sure you want to logout?</p>
+						<div className="great-btn">
+							<button onClick={onCancel}>Cancel</button>
+							<button onClick={onBack}>Yes, Logout</button>
+						</div>
+					</div>
+					<div className={log?"success":"message"}>
 						<div className="back">
 							<ArrowLeft size={50} color="#1EBA60" onClick={onBack} />
 							<h1>Settings</h1>
@@ -116,7 +132,7 @@ function Setting(){
 							</div>
 							<CaretRight size={20} color="#1EBA60" />
 						</div>
-						<div className="setting-mid">
+						<div onClick={onLogOut} className="setting-mid">
 							<div className="wallet">
 								<button className="cancel">
 									<SignOut size={20} color="#f02828" />
