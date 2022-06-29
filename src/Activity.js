@@ -1,6 +1,6 @@
-import {useState} from "react"
-import MyFundraising from "./MyFundraising"
-import {UserThree,ArchiveBox,SmileyWink,Circle} from "phosphor-react"
+// import {useState} from "react"
+// import MyFundraising from "./MyFundraising"
+import {SmileyWink,Circle} from "phosphor-react"
 
 function Activity({sayThanks}){
 	// // const [thanks,setThanks] = useState(false)
