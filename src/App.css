@@ -900,7 +900,7 @@
 }
 
 .menu *{
-  background-color: #eff1ef;
+  background-color: #e8f8ef;
   padding: 10px;
   border-radius: 10px;
   margin: 5px;
@@ -2315,6 +2315,8 @@
 
 .inbox{
   /*background-color: red;*/
+  position: relative;
+  padding-bottom: 20px;
 }
 
 .inbox .search-max{

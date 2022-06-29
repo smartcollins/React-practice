@@ -9,6 +9,10 @@ import Notification from "./Notification"
 import Bookmark from "./Bookmark"
 import Search from "./Search"
 import Donation from "./Donation"
+import MyDonation from "./MyDonation"
+import MyFundraising from "./MyFundraising"
+import Inbox from "./Inbox"
+import Userprofile from "./Userprofile"
 import {UsersThree,MagnifyingGlass,Bell,BookmarkSimple,Wallet,Circle} from "phosphor-react";
 
 function Home(){
@@ -16,6 +20,12 @@ function Home(){
 	const [notify,setNotify] = useState(false)
 	const [mark,setMark] = useState(false)
 	const [search,setSearch] = useState(false)
+
+	const [calender,setCalender] = useState(false)
+	const [fund,setFund] = useState(false)
+	const [inbox,setInbox] = useState(false)
+	const [profile,setProfile] = useState(false)
+	// const [click,setClick] = useState(false)
 
 	function onLogo(){
 		setLogo(true)
@@ -33,18 +43,42 @@ function Home(){
 		setSearch(true)
 	}
 
-	
+	function onCalender(){
+		setCalender(true)
+	}
+
+	function onFund(){
+		setFund(true)
+	}
+
+	function onInbox(){
+		setInbox(true)
+	}
+
+	function onProfile(){
+		setProfile(true)
+		// setClick(true)
+	}
 
 	return(
 		<div>	
-			{	logo ? 
-					<Donation/> :
-				search ? 
-					<Search/> :
-				notify ?
-					<Notification/> :
-				mark ?
-					<Bookmark/> :
+			{
+				logo? 
+				<Donation/>:
+				search? 
+				<Search/>:
+				notify?
+				<Notification/>:
+				mark?
+				<Bookmark/>:
+				calender?
+				<MyDonation/> :
+				fund?
+				<MyFundraising/> :
+				inbox?
+				<Inbox/>:
+				profile?
+				<Userprofile/>:
 				<div className="Home">
 					<div className="home-top">
 						<div className="home-top1">
@@ -91,7 +125,12 @@ function Home(){
 					<Coming/>
 					<Watch/>
 					<Prayer/>
-					<Menu/>
+					<Menu
+						onCalender={onCalender}
+						onFund={onFund}
+						onInbox={onInbox}
+						onProfile={onProfile}
+					/>
 				</div>
 			}
 		</div>

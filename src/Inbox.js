@@ -21,7 +21,7 @@ function Inbox(){
 			{
 				home ?
 				<MyFundraising/>:
-				<div>
+				<div className="home">
 					{
 						user?
 						<Message/>:
@@ -135,6 +135,7 @@ function Inbox(){
 									<p>Yesterday</p>
 								</div>
 							</div>
+							<Menu/>
 						</div>
 					}
 				</div>

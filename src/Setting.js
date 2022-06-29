@@ -73,7 +73,7 @@ function Setting(){
 					</div>
 					<div className={log?"success":"message"}>
 						<div className="back">
-							<ArrowLeft size={50} color="#1EBA60" onClick={onBack} />
+							<ArrowLeft size={30} color="#1EBA60" onClick={onBack} />
 							<h1>Settings</h1>
 						</div>
 					</div>
